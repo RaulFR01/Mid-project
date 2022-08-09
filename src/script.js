@@ -24,3 +24,26 @@ function validateForm(){
 
     return true;
 } 
+
+async function getAPI1() {
+    try {
+        const API = await fetch("https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects");
+        const JSON = await API.json();
+        return JSON;
+    } catch (error){
+        console.log(error)
+    }
+}
+
+/*
+
+function main(){
+    const resultado = await getAPI1();
+    console.log(resultado);
+    getElementsHomePage();
+}
+
+main();
+
+// help -> JSON.map(proyecto => document.getElementById("parrafo-proyecto").innerHTML = proyecto.content);
+*/
