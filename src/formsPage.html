@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="/src/script.js" defer></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="/img/logos/circle.svg" alt="circle-logo">
+            <div class="list-sections">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Projects</a></li>
+                    <li><a>Services</a></li>
+                </ul>
+            </div>
+            <a href="/src/formsPage.html">Contact Us</a>
+        </nav>
+    </header>
+    <h1>Contact Us</h1>
+    <form action="/src/formsPage.html" onsubmit="return validateForm()">
+        <fieldset>
+            <label for="full-name">Full Name *</label>
+            <input type="text" name="full-name" id="full-name" required/>
+        </fieldset>
+        <fieldset>
+            <label for="mail">Email</label>
+            <input type="mail" name="mail" id="mail"/>
+        </fieldset>
+        <fieldset>
+            <label for="phone">Phone</label>
+            <input type="number" name="phone" id="phone"/>
+        </fieldset>
+        <fieldset>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <div id="error-message"></div>
+    </form>
+    
+</body>
+</html>
