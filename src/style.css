@@ -1,7 +1,140 @@
-body{
-    background-color: #E5E5E5;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+html {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
+body {
+  background-color: #e5e5e5;
+}
+/**Project Page Header Section*/
+
+.headerProject {
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 86px;
+  margin-bottom: 86px;
+}
+
+.headerProject > nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-sections > ul {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-sections > ul > li {
+  list-style: none;
+}
+
+
+/**Project Page Simplify Section*/
+
+.simplify {
+  margin-left: 170px;
+  margin-right: 170px;
+}
+
+.subSimplify {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.simplifyHeader > h1 {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.imagenSimplify img{
+    width: 100%;
+    height: 100%;
+}
+
+.parrafoSimplify p {
+  text-align: justify;
+  text-justify: auto;
+}
+
+/**Project Page Other Projects Section*/
+
+.otherProjects {
+  margin-left: 170px;
+  margin-right: 170px;
+}
+
+.otherProjects .projectsLearnMore {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectsLearnMore > div {
+  width: 340px;
+  height: 444px;
+  border: solid;
+}
+
+.oPTextContent{
+    margin: 30px;
+    height: 50%;
+}
+
+.projectsLearnMore .orbit img {
+  width: 100%;
+  height: 50%;
+}
+.projectsLearnMore .purify img {
+  width: 100%;
+  height: 50%;
+}
+.projectsLearnMore .cryptoPie img {
+  width: 100%;
+  height: 50%;
+}
+
+/**Project Page Questions Section*/
+
+.questions {
+  position: relative;
+}
+
+.yellowBox {
+  height: 500px;
+  background-color: #ffc600;
+  margin: 60px;
+  position: relative;
+}
+
+.contentYellowBox {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/**Project Page Contact Section*/
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px;
+}
+
+.linksProject {
+  display: grid;
+  grid-template-rows: 70px 70px;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 0px;
+  
 #btn-submit {
     background-color: #072AC8;
     color: white;
