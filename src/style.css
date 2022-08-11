@@ -64,6 +64,13 @@ h3 {
   left: 465px;
   top: 332px;
 }
+#our-services .external-div{
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding:40px;
+}
 
 #our-services h4 {
   font-size: 24px;
@@ -77,4 +84,15 @@ h3 {
 
 #our-services a{
   color: #072AC8;
+}
+
+#our-services .internal-div {
+  background: #FFFFFF;
+  box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+  padding-bottom: 92px;
+  padding-top: 198px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 30px;
+  
 }
