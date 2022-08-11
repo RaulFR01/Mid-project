@@ -32,7 +32,6 @@ body {
   list-style: none;
 }
 
-
 /**Project Page Simplify Section*/
 
 .simplify {
@@ -52,9 +51,9 @@ body {
   margin-block-end: 0;
 }
 
-.imagenSimplify img{
-    width: 100%;
-    height: 100%;
+.imagenSimplify img {
+  width: 100%;
+  height: 100%;
 }
 
 .parrafoSimplify p {
@@ -80,9 +79,9 @@ body {
   border: solid;
 }
 
-.oPTextContent{
-    margin: 30px;
-    height: 50%;
+.oPTextContent {
+  margin: 30px;
+  height: 50%;
 }
 
 .projectsLearnMore .orbit img {
@@ -134,70 +133,69 @@ body {
   grid-template-rows: 70px 70px;
   grid-template-columns: 100px 100px 100px;
   grid-gap: 0px;
-  
+}
 #btn-submit {
-    background-color: #072AC8;
-    color: white;
-    text-align: center;
-    width: 100%;
-    padding: 20px;
-    border: none;
-    margin-top: 20px;
-    cursor: pointer;
+  background-color: #072ac8;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 #contact-form {
-    width: 100%;
-    align-items: center;
-    margin: auto;
+  width: 100%;
+  align-items: center;
+  margin: auto;
 }
-
 
 fieldset {
-    margin: 0;
-    padding: 0;
-    border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
-#contact-form label{
-    font-size: 20px;
+#contact-form label {
+  font-size: 20px;
 }
 
-#contact-form input{
-    height: 70px;
-    width: 1415px;
-    font-size: 17px;
-    background-color: rgba(107, 112, 141, 0.1);
-    padding-left: 20px;
-    border: none;
-    margin: 20px 0px 20px 0px;
+#contact-form input {
+  height: 70px;
+  width: 1415px;
+  font-size: 17px;
+  background-color: rgba(107, 112, 141, 0.1);
+  padding-left: 20px;
+  border: none;
+  margin: 20px 0px 20px 0px;
 }
 
-#contact-form textarea{
-    font-size: 17px;
-    background-color: rgba(107, 112, 141, 0.1);
-    padding-left: 20px;
-    padding-top: 20px;
-    margin-top: 20px;
-    border: none;
+#contact-form textarea {
+  font-size: 17px;
+  background-color: rgba(107, 112, 141, 0.1);
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border: none;
 }
 
-#contact-div{
-    width: 1440px;
-    height: 830px;
-    margin: auto;
+#contact-div {
+  width: 1440px;
+  height: 830px;
+  margin: auto;
 }
-#contact-div > h1{
-    font-size: 60px;
-    line-height: 70px;
+#contact-div > h1 {
+  font-size: 60px;
+  line-height: 70px;
 }
-#input-row{
-    display: flex;
-    justify-content:space-between;
-    flex-direction: row;
+#input-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-#input-row input{
-    width: 600px;
-    margin: 20px 0px 20px 0px;
+#input-row input {
+  width: 600px;
+  margin: 20px 0px 20px 0px;
 }
