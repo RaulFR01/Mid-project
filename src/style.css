@@ -3,17 +3,58 @@ body {
 }
 
 #testimonial-section {
-  background-color: #292E47;
+  position: relative;
+  background-color: #292e47;
   margin-left: 60px;
   margin-right: 60px;
 
+  width: 1320px;
+}
+
+#testimonial-section .internal-div {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#testimonial-section h3 {
+  font-size: 40px;
+  color: #f4f6fc;
+}
+
+#testimonial-section .review {
+  font-size: 24px;
+  color: #ffc600;
+}
+
+#testimonial-section .Kristin {
+  font-size: 17px;
+  color: #a2d6f9;
+  line-height: 100%;
+}
+
+#testimonial-section .booking {
+  font-size: 13px;
+  color: #f4f6fc;
+  line-height: 15px;
+}
+.orbit-background {
+  box-sizing: border-box;
+  width: 1088px;
+  z-index: -1;
+}
+
+h3 {
+  font-size: 40px;
 }
 
 .memoji {
   width: 150px;
   height: 150px;
 }
-
 
 .Kristin-img {
   border-radius: 50%;
@@ -22,4 +63,18 @@ body {
   height: 50px;
   left: 465px;
   top: 332px;
+}
+
+#our-services h4 {
+  font-size: 24px;
+  color: #292E47;
+}
+
+#our-services p {
+  font-size: 20px;
+  color: #6B708D;
+}
+
+#our-services a{
+  color: #072AC8;
 }
