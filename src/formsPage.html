@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
-    <script src="/src/script.js" defer></script>
     <title>Contact Us</title>
 </head>
 <body>
@@ -22,27 +21,31 @@
             <a href="/src/formsPage.html">Contact Us</a>
         </nav>
     </header>
-    <h1>Contact Us</h1>
-    <form action="/src/formsPage.html" onsubmit="return validateForm()">
+    <div id="contact-div">
+        <h1>Contact Us</h1>
+    <form action="/src/formsPage.html" id="contact-form" onsubmit="return validateForm()">
         <fieldset>
-            <label for="full-name">Full Name *</label>
-            <input type="text" name="full-name" id="full-name" required/>
+            <label for="full-name">Full Name *</label><br>
+            <input type="text" name="full-name" id="full-name" placeholder="Enter your full name" required/>
         </fieldset>
+        <div id="input-row">
+            <fieldset>
+                <label for="mail">Email</label><br>
+                <input type="mail" name="mail" id="mail" placeholder="Enter your maill address"/>
+            </fieldset>
+            <fieldset>
+                <label for="phone">Phone</label><br>
+                <input type="number" name="phone" id="phone" placeholder="Enter your phone number"/>
+            </fieldset>
+        </div>
         <fieldset>
-            <label for="mail">Email</label>
-            <input type="mail" name="mail" id="mail"/>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="150" rows="10" placeholder="Write your message here ...."></textarea>
         </fieldset>
-        <fieldset>
-            <label for="phone">Phone</label>
-            <input type="number" name="phone" id="phone"/>
-        </fieldset>
-        <fieldset>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        </fieldset>
-        <button type="submit">Submit</button>
+        <button type="submit" id="btn-submit">Submit</button>
         <div id="error-message"></div>
     </form>
-    
+    </div>
+    <script src="/src/script.js" defer></script>
 </body>
 </html>
