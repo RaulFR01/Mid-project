@@ -1,5 +1,6 @@
 body {
   background-color: #e5e5e5;
+
 }
 
 #testimonial-section {
@@ -12,7 +13,6 @@ body {
   
  
 }
-
 
 #testimonial-section .internal-div {
   position: absolute;
@@ -144,4 +144,18 @@ h3 {
   padding-right: 30px;
   margin: 30px;
   
+}
+
+.Learn-more {
+  text-decoration: none;
+}
+
+.icon-box { 
+  background-color: #ECF7FF ;
+  display:flex;
+  position: absolute;
+  border-radius: 50%;
+  padding: 1%;
+
+
 }
