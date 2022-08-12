@@ -92,6 +92,12 @@ h3 {
   height: 150px;
 }
 
+.clients-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .Kristin-img {
   border-radius: 50%;
   position: absolute;
@@ -99,7 +105,14 @@ h3 {
   height: 50px;
   left: 465px;
   top: 332px;
+  flex-basis: 40%;
+  max-width: 100%;
 }
+
+.Kristin-text {
+  padding-left: 20px;
+}
+
 #our-services .external-div{
   display: flex;
   justify-content: center;
