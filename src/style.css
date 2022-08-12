@@ -31,22 +31,21 @@ body {
 
 .list-sections > ul > li {
   list-style: none;
-  color: #6B708D;
+  color: #6b708d;
 }
 
-.contactUsProject{
-  background-color: #072AC8;
+.contactUsProject {
+  background-color: #072ac8;
   display: flex;
   align-items: center;
 }
 
-.contactUsProject > a{
+.contactUsProject > a {
   color: white;
   text-decoration: none;
   padding: 15px 36px;
   font-weight: 500;
 }
-
 
 /**Project Page Simplify Section*/
 
@@ -61,25 +60,25 @@ body {
   margin-bottom: 20px;
 }
 
-.subSimplify h3{
-  color: #6B708D;
+.subSimplify h3 {
+  color: #6b708d;
 }
 
-.simplifyHeader > h1 {
+#simplifyTitle {
+  font-family: "Roboto";
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-style: normal;
-  font-weight: 700;
+  font-weight: bolder;
   font-size: 60px;
   line-height: 70px;
 }
 
-.sub2 span{
-  color: #6B708D;
+.sub2 span {
+  color: #6b708d;
 }
 
-.imagenSimplify img{
+.imagenSimplify img {
   width: 100%;
   height: 100%;
   margin-bottom: 40px;
@@ -90,7 +89,7 @@ body {
   text-justify: auto;
   font-weight: 400;
   line-height: 30px;
-  color: #6B708D;
+  color: #6b708d;
 }
 
 /**Project Page Other Projects Section*/
@@ -102,9 +101,8 @@ body {
   margin-bottom: 80px;
 }
 
-.otherProjects > h2{
-  font-style: normal;
-  font-weight: 700;
+.otherProjects > h2 {
+  font-weight: bolder;
   font-size: 40px;
   line-height: 47px;
   margin-bottom: 60px;
@@ -119,43 +117,36 @@ body {
   width: 340px;
   height: 444px;
   background-color: white;
+  position: relative;
 }
 
-.oPTextContent{
+.oPTextContent {
   margin-left: 30px;
   height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
+  top: -20px;
 }
 
-#sub4{
+#sub4 {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
 }
 
-#sub5{
+#sub5 {
   font-weight: 400;
   font-size: 17px;
   line-height: 150%;
-  color: #6B708D;
+  color: #6b708d;
 }
 
-.oPTextContent a{
-  color: #072AC8;
+.oPTextContent a {
+  color: #072ac8;
   text-decoration: none;
-
 }
-
-.mailForm button{
-  color: white;
-  text-decoration: none;
-  padding: 15px 36px;
-  font-weight: 500;
-  background-color: #072AC8;
-}
-
 
 
 .projectsLearnMore .orbit img {
@@ -171,8 +162,6 @@ body {
   height: 50%;
 }
 
-
-
 /**Project Page Questions Section*/
 
 .questions {
@@ -184,6 +173,19 @@ body {
   background-color: #ffc600;
   margin: 60px;
   position: relative;
+}
+
+#anyQuestions {
+  font-family: "Roboto";
+  font-weight: bolder;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+#letUsHelpYou {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
 }
 
 .contentYellowBox {
@@ -198,7 +200,61 @@ body {
 
 /**Project Page Contact Section*/
 
-.logoAdress > img{
+
+.mailForm {
+  margin-top: 40px;
+}
+
+.mailForm > form {
+  display: flex;
+}
+
+.mailForm button {
+  color: white;
+  text-decoration: none;
+  padding: 15px 36px;
+  font-weight: 500;
+  background-color: #072ac8;
+  width: 198px;
+  height: 80px;
+  left: 658px;
+  top: 147px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  margin-left: 25px;
+}
+
+#inputFormDiv {
+  width: 393px;
+  height: 80px;
+  left: 245px;
+  top: 147px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#inputFormDiv img{
+  margin-left: 30px;
+}
+
+#inputForm {
+  width: 123px;
+  height: 26px;
+  left: 315px;
+  top: 174px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  color: #292E47;
+}
+
+.logoAdress > img {
   margin-bottom: 30px;
   width: 98.38px;
   height: 30px;
