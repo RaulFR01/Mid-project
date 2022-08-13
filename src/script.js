@@ -33,9 +33,14 @@ async function getAPI(url) {
     const API = await fetch(url);
     const JSON = await API.json();
     writeProject(JSON);
+    writeDataHomePage(JSON);
   } catch (error) {
     console.log(error);
   }
+}
+
+function SortArray(x, y) {
+  return x.uuid - y.uuid;
 }
 
 function writeProject(data) {
@@ -57,6 +62,36 @@ function writeProject(data) {
     const claseImagen2 = document.getElementById("imagenSimplifyBlurred");
     claseImagen2.appendChild(image2);
   }
+}
+
+function writeDataHomePage(data) {
+  const resultado = data
+    .sort(SortArray)
+    .filter((proyecto) => proyecto.uuid !== "4");
+
+  //const clase = document.querySelector(".projectsLearnMore");
+
+  let content = ``;
+
+  for (proyecto of resultado) {
+    content = `
+      <div class="card">
+          <img src= "${proyecto.image}" alt="image of ${proyecto.name}" />
+          <div class="oPTextContent">
+            <div>
+              <p id="sub4">${proyecto.name}</p>
+              <p id="sub5">${proyecto.description}</p>
+            </div>
+            <a href="/src/Projects/${proyecto.uuid}.html">Learn more</a>
+          </div>
+        </div>
+    
+    `;
+    console.log(content);
+    document.querySelector(".projectsLearnMore").innerHTML += content;
+  }
+
+  console.log(resultado);
 }
 
 getAPI(API_URL);
