@@ -69,8 +69,6 @@ function writeDataHomePage(data) {
     .sort(SortArray)
     .filter((proyecto) => proyecto.uuid !== "4");
 
-  //const clase = document.querySelector(".projectsLearnMore");
-
   let content = ``;
 
   for (proyecto of resultado) {
@@ -85,13 +83,9 @@ function writeDataHomePage(data) {
             <a href="/src/Projects/${proyecto.uuid}.html">Learn more</a>
           </div>
         </div>
-    
     `;
-    console.log(content);
     document.querySelector(".projectsLearnMore").innerHTML += content;
   }
-
-  console.log(resultado);
 }
 
 getAPI(API_URL);
