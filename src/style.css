@@ -1,5 +1,3 @@
-
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 html {
@@ -16,8 +14,8 @@ body {
 .headerProject {
   margin-left: 170px;
   margin-right: 170px;
-  margin-top: 70px; /*from 86px to 70px*/
-  margin-bottom: 0px; /*lo he sacado*/
+  margin-top: 70px;
+  margin-bottom: 0px; 
 }
 
 .headerProject > nav {
@@ -64,6 +62,11 @@ body {
 .simplify {
   margin-left: 170px;
   margin-right: 170px;
+  margin-top: 120px;
+}
+
+.simplifyHeader{
+  margin-bottom: 50px;
 }
 
 .subSimplify {
@@ -74,6 +77,9 @@ body {
 
 .subSimplify h3 {
   color: #6b708d;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 #simplifyTitle {
@@ -122,7 +128,7 @@ body {
 .otherProjects {
   margin-left: 170px;
   margin-right: 170px;
-  margin-top: 70px;
+  margin-top: 120px;
   margin-bottom: 80px;
 }
 
@@ -131,6 +137,7 @@ body {
   font-size: 40px;
   line-height: 47px;
   margin-bottom: 60px;
+  
 }
 
 .otherProjects .projectsLearnMore {
@@ -191,6 +198,7 @@ body {
 
 .questions {
   position: relative;
+  margin-top: 175px
 }
 
 .yellowBox {
@@ -384,7 +392,6 @@ fieldset {
   height: 650px;
   margin-left: 18px;
   margin-top: 97px;
-
 }
 
 #container-hero-section {
