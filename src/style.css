@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 html {
   margin: 0;
@@ -38,10 +38,10 @@ body {
   background-color: #072ac8;
   display: flex;
   align-items: center;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.contactUsProject:hover{
+.contactUsProject:hover {
   background-color: #051a7a;
   transform: scale(1.1);
 }
@@ -173,13 +173,13 @@ body {
   height: 50%;
 }
 
-.fichas{
-  transition: all .2s ease-in-out;
+.fichas {
+  transition: all 0.2s ease-in-out;
 }
 
-.fichas:hover{
+.fichas:hover {
   transform: scale(1.1);
-
+}
 /**Project Page Questions Section*/
 
 .questions {
@@ -240,11 +240,10 @@ body {
   font-size: 17px;
   line-height: 130%;
   margin-left: 25px;
-  transition: all .2s ease-in-out
+  transition: all 0.2s ease-in-out;
 }
 
-
-.mailForm button:hover{
+.mailForm button:hover {
   background-color: #051a7a;
   transform: scale(1.05);
 }
@@ -314,6 +313,7 @@ body {
   border: none;
   margin-top: 20px;
   cursor: pointer;
+  font-size: 17px;
 }
 
 #contact-form {
@@ -334,27 +334,31 @@ fieldset {
 
 #contact-form input {
   height: 70px;
-  width: 1415px;
+  width: 100%;
   font-size: 17px;
   background-color: rgba(107, 112, 141, 0.1);
-  padding-left: 20px;
   border: none;
   margin: 20px 0px 20px 0px;
+  padding: 0;
 }
 
 #contact-form textarea {
   font-size: 17px;
-  background-color: rgba(107, 112, 141, 0.1);
-  padding-left: 20px;
+  font-weight: 500;
+  text-align: left;
   padding-top: 20px;
+  background-color: rgba(107, 112, 141, 0.1);
   margin-top: 20px;
+  padding-top: 20px;
   border: none;
+  width: 100%;
+  padding: 0;
+  font-family: "Roboto";
 }
 
 #contact-div {
-  width: 1440px;
   height: 830px;
-  margin: auto;
+  margin: 60px 170px 60px 170px;
 }
 #contact-div > h1 {
   font-size: 60px;
@@ -366,7 +370,14 @@ fieldset {
   flex-direction: row;
 }
 
-#input-row input {
-  width: 600px;
-  margin: 20px 0px 20px 0px;
+#input-row fieldset {
+  width: 48%;
+}
+
+input::placeholder {
+  padding: 20px;
+}
+
+textarea::placeholder {
+  padding: 20px 20px 20px 30px;
 }
