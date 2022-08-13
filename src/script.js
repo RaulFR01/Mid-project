@@ -51,6 +51,11 @@ function writeProject(data) {
     image.setAttribute("alt", "imagen de simplify");
     const claseImagen = document.getElementById("imagenSimplify");
     claseImagen.appendChild(image);
+    const image2 = document.createElement("img");
+    image2.setAttribute("src", elementos.image);
+    image2.setAttribute("alt", "imagen2 de simplify");
+    const claseImagen2 = document.getElementById("imagenSimplifyBlurred");
+    claseImagen2.appendChild(image2);
   }
 }
 
