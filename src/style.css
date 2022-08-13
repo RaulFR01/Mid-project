@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 html {
   margin: 0;
@@ -6,7 +8,560 @@ html {
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color:#F4F6FC; /*color changed*/
+}
+
+/**Project Page Header Section*/
+
+.headerProject {
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 70px; /*from 86px to 70px*/
+  margin-bottom: 0px; /*lo he sacado*/
+}
+
+.headerProject > nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-sections > ul {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-sections > ul > li {
+  list-style: none;
+  color: #6b708d;
+}
+
+.contactUsProject {
+  background-color: #072ac8;
+  display: flex;
+  align-items: center;
+  transition: all .2s ease-in-out;
+}
+
+.contactUsProject:hover{
+  background-color: #051a7a;
+  transform: scale(1.1);
+}
+
+.contactUsProject > a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 36px;
+  font-weight: 500;
+}
+
+.list-sections > ul > li > a {
+  text-decoration: none;
+}
+
+/**Project Page Simplify Section*/
+
+.simplify {
+  margin-left: 170px;
+  margin-right: 170px;
+}
+
+.subSimplify {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.subSimplify h3 {
+  color: #6b708d;
+}
+
+#simplifyTitle {
+  font-family: "Roboto";
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: bolder;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.sub2 span {
+  color: #6b708d;
+}
+
+#imagenSimplifyBlurred {
+  position: absolute;
+  z-index: -1;
+}
+#imagenSimplifyBlurred > img {
+  width: 100%;
+  margin-bottom: 40px;
+  filter: blur(10px);
+}
+
+#imagenSimplify {
+  position: relative;
+}
+#imagenSimplify > img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+.parrafoSimplify p {
+  text-align: justify;
+  text-justify: auto;
+  font-weight: 400;
+  line-height: 30px;
+  color: #6b708d;
+}
+
+/**Project Page Other Projects Section*/
+
+.otherProjects {
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.otherProjects > h2 {
+  font-weight: bolder;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 60px;
+}
+
+.otherProjects .projectsLearnMore {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectsLearnMore > div {
+  width: 340px;
+  height: 444px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+}
+
+.oPTextContent {
+  margin-left: 30px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  top: -20px;
+}
+
+#sub4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#sub5 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #6b708d;
+}
+
+.oPTextContent a {
+  color: #072ac8;
+  text-decoration: none;
+}
+
+.projectsLearnMore .fichas img {
+  width: 100%;
+  height: 50%;
+}
+
+.fichas{
+  transition: all .2s ease-in-out;
+}
+
+.fichas:hover{
+  transform: scale(1.1);
+}
+
+/**Project Page Questions Section*/
+
+.questions {
+  position: relative;
+}
+
+.yellowBox {
+  height: 500px;
+  background-color: #ffc600;
+  margin: 60px;
+  position: relative;
+}
+
+#anyQuestions {
+  font-family: "Roboto";
+  font-weight: bolder;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+#letUsHelpYou {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.contentYellowBox {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/**Project Page Contact Section*/
+
+.mailForm {
+  margin-top: 40px;
+}
+
+.mailForm > form {
+  display: flex;
+}
+
+.mailForm button {
+  color: white;
+  text-decoration: none;
+  padding: 15px 36px;
+  font-weight: 500;
+  background-color: #072ac8;
+  width: 198px;
+  height: 80px;
+  left: 658px;
+  top: 147px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  margin-left: 25px;
+  transition: all .2s ease-in-out
+}
+
+
+.mailForm button:hover{
+  background-color: #051a7a;
+  transform: scale(1.05);
+}
+
+#inputFormDiv {
+  width: 393px;
+  height: 80px;
+  left: 245px;
+  top: 147px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#inputFormDiv img {
+  margin-left: 30px;
+}
+
+#inputForm {
+  width: 300px;
+  height: 26px;
+  left: 315px;
+  top: 174px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  color: #292e47;
+  border: none;
+  text-align: start;
+  /**background-image: url("/img/newsletter/icon/mail.svg");
+  background-repeat: no-repeat;*/
+}
+
+/**#inputForm:focus{
+  background-image: none;
+}*/
+
+.logoAdress > img {
+  margin-bottom: 30px;
+  width: 98.38px;
+  height: 30px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 200px 170px 100px 170px;
+}
+
+.linksProject {
+  display: grid;
+  grid-template-rows: 70px 70px;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 0px;
+}
+
+#btn-submit {
+  background-color: #072ac8;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#contact-form {
+  width: 100%;
+  align-items: center;
+  margin: auto;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#contact-form label {
+  font-size: 20px;
+}
+
+#contact-form input {
+  height: 70px;
+  width: 1415px;
+  font-size: 17px;
+  background-color: rgba(107, 112, 141, 0.1);
+  padding-left: 20px;
+  border: none;
+  margin: 20px 0px 20px 0px;
+}
+
+#contact-form textarea {
+  font-size: 17px;
+  background-color: rgba(107, 112, 141, 0.1);
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border: none;
+}
+
+#contact-div {
+  width: 1440px;
+  height: 830px;
+  margin: auto;
+}
+#contact-div > h1 {
+  font-size: 60px;
+  line-height: 70px;
+}
+#input-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#input-row input {
+  width: 600px;
+  margin: 20px 0px 20px 0px;
+}
+
+/* Hero-Section upper-Index*/
+#hero-section {
+  width: 1440px;
+  height: 650px;
+  margin-left: 18px;
+  margin-top: 97px;
+
+}
+
+#container-hero-section {
+  width: 1100px;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 170px;
+}
+
+#content-hero-section{
+  margin-top: 109px;
+  width: 530px;
+  height: 422px;
+  text-align: left;
+}
+
+#content-hero-section h1{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 530px;
+  height: 210px;
+  font-weight: 700; 
+  font-size: 60px;
+  line-height: 70px;
+  color: #292E47;
+}
+
+#content-hero-section p {
+  width: 435px;
+  height: 90px;
+  color: #6B708D;
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 400;
+  margin-block-start: 30px;
+  margin-block-end: 40px;
+}
+
+#links-hero-section {
+  display: flex;
+  flex-direction: row;
+}
+
+#links-hero-section a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px; 
+}
+#touch-hero-section  {
+  color: #FFFFFF;
+  width: 92;
+  height: 22px;
+  text-align: center;
+  background-color: #072ac8;
+  padding: 15px 29px;
+  margin-right: 40px;
+}
+
+#work-hero-section { /*falta position: en figma es relatiu a #content-hero-section i jo tinc 1 div pel mig */
+  color: #6B708D;
+  margin-top: 15px;
+}
+
+#images-hero-section {
+  width: 570px;
+  height: 650px;
+  background-image: url(/img/hero-section/hero-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  
+}
+
+#images-hero-section > img {
+  width: 380px;
+  height: 400px;
+}
+
+#card1 {
+  position: absolute;
+  left: -90px;
+  top: -15px;
+}
+
+#card2 {
+  position: absolute;
+  left: 300px;
+  top: 400px;
+}
+
+
+#client-section {
+  width: 1440px;
+  height: 96px;
+  margin-top: 133px;
+  margin-bottom: 200px;
+}
+
+#client-section-images {
+  width: 1077px;
+  margin-left: 170px;
+  margin-right: 193px;
+  filter: grayscale(100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#projects-section {
+  width: 1100px;
+  height: 561px;
+}
+
+#projects-section h2 {
+  width: 285;
+  height: 47px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #292E47;
+}
+
+#projects-section-flex {
+  height: 444px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.projects-section-style {
+height: 444px;
+width: 340px;
+background-color: #FFFFFF;
+
+}
+
+.projects-section-style img {
+  width: 340px;
+  height: 240px;
+}
+
+.projects-section-style h3 {
+  width: 88px;
+  height: 28px;
+  left: 30px;
+  top: 270px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #292E47;
+}
+
+.projects-section-style p{
+  width: 225px;
+  height: 26px;
+  left: 30px;
+  top: 308px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #6B708D;
+}
+
+.projects-section-style a{
+  width: 86px;
+  height: 26px;
+  left: 30px;
+  top: 388px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #072AC8;
+  text-decoration: none;
 }
 
 /* testimonial-section  */
@@ -223,23 +778,3 @@ top: 267px;
   align-items: center;
 }
 
-/**Project Page Contact Section*/
-
-.logoAdress > img {
-  margin-bottom: 30px;
-  width: 98.38px;
-  height: 30px;
-}
-
-.contact {
-  display: flex;
-  justify-content: space-between;
-  margin: 60px;
-}
-
-.linksProject {
-  display: grid;
-  grid-template-rows: 70px 70px;
-  grid-template-columns: 100px 100px 100px;
-  grid-gap: 0px;
-}
