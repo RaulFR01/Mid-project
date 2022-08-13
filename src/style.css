@@ -9,7 +9,7 @@ body {
   background-color:#F4F6FC; /*color changed*/
 }
 
-/*Project Page Header Section*/
+/**Project Page Header Section*/
 
 .headerProject {
   margin-left: 170px;
@@ -31,6 +31,26 @@ body {
 
 .list-sections > ul > li {
   list-style: none;
+  color: #6b708d;
+}
+
+.contactUsProject {
+  background-color: #072ac8;
+  display: flex;
+  align-items: center;
+  transition: all .2s ease-in-out;
+}
+
+.contactUsProject:hover{
+  background-color: #051a7a;
+  transform: scale(1.1);
+}
+
+.contactUsProject > a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 36px;
+  font-weight: 500;
 }
 
 .list-sections > ul > li > a {
@@ -50,20 +70,49 @@ body {
   margin-bottom: 20px;
 }
 
-.simplifyHeader > h1 {
+.subSimplify h3 {
+  color: #6b708d;
+}
+
+#simplifyTitle {
+  font-family: "Roboto";
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+  font-weight: bolder;
+  font-size: 60px;
+  line-height: 70px;
 }
 
-.imagenSimplify img {
+.sub2 span {
+  color: #6b708d;
+}
+
+#imagenSimplifyBlurred {
+  position: absolute;
+  z-index: -1;
+}
+#imagenSimplifyBlurred > img {
+  width: 100%;
+  margin-bottom: 40px;
+  filter: blur(10px);
+}
+
+#imagenSimplify {
+  position: relative;
+}
+#imagenSimplify > img {
   width: 100%;
   height: 100%;
+  margin-bottom: 40px;
 }
 
 .parrafoSimplify p {
   text-align: justify;
   text-justify: auto;
+  font-weight: 400;
+  line-height: 30px;
+  color: #6b708d;
 }
 
 /**Project Page Other Projects Section*/
@@ -71,6 +120,15 @@ body {
 .otherProjects {
   margin-left: 170px;
   margin-right: 170px;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.otherProjects > h2 {
+  font-weight: bolder;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 60px;
 }
 
 .otherProjects .projectsLearnMore {
@@ -81,25 +139,50 @@ body {
 .projectsLearnMore > div {
   width: 340px;
   height: 444px;
-  border: solid;
+  background-color: white;
+  position: relative;
+  box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
 
 .oPTextContent {
-  margin: 30px;
+  margin-left: 30px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  top: -20px;
+}
+
+#sub4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#sub5 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #6b708d;
+}
+
+.oPTextContent a {
+  color: #072ac8;
+  text-decoration: none;
+}
+
+.projectsLearnMore .fichas img {
+  width: 100%;
   height: 50%;
 }
 
-.projectsLearnMore .orbit img {
-  width: 100%;
-  height: 50%;
+.fichas{
+  transition: all .2s ease-in-out;
 }
-.projectsLearnMore .purify img {
-  width: 100%;
-  height: 50%;
-}
-.projectsLearnMore .cryptoPie img {
-  width: 100%;
-  height: 50%;
+
+.fichas:hover{
+  transform: scale(1.1);
 }
 
 /**Project Page Questions Section*/
@@ -115,6 +198,19 @@ body {
   position: relative;
 }
 
+#anyQuestions {
+  font-family: "Roboto";
+  font-weight: bolder;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+#letUsHelpYou {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
 .contentYellowBox {
   margin: 0;
   position: absolute;
@@ -127,10 +223,84 @@ body {
 
 /**Project Page Contact Section*/
 
+.mailForm {
+  margin-top: 40px;
+}
+
+.mailForm > form {
+  display: flex;
+}
+
+.mailForm button {
+  color: white;
+  text-decoration: none;
+  padding: 15px 36px;
+  font-weight: 500;
+  background-color: #072ac8;
+  width: 198px;
+  height: 80px;
+  left: 658px;
+  top: 147px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  margin-left: 25px;
+  transition: all .2s ease-in-out
+}
+
+
+.mailForm button:hover{
+  background-color: #051a7a;
+  transform: scale(1.05);
+}
+
+#inputFormDiv {
+  width: 393px;
+  height: 80px;
+  left: 245px;
+  top: 147px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#inputFormDiv img {
+  margin-left: 30px;
+}
+
+#inputForm {
+  width: 300px;
+  height: 26px;
+  left: 315px;
+  top: 174px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  color: #292e47;
+  border: none;
+  text-align: start;
+  /**background-image: url("/img/newsletter/icon/mail.svg");
+  background-repeat: no-repeat;*/
+}
+
+/**#inputForm:focus{
+  background-image: none;
+}*/
+
+.logoAdress > img {
+  margin-bottom: 30px;
+  width: 98.38px;
+  height: 30px;
+}
+
 .contact {
   display: flex;
   justify-content: space-between;
-  margin: 60px;
+  margin: 200px 170px 100px 170px;
 }
 
 .linksProject {
@@ -139,6 +309,7 @@ body {
   grid-template-columns: 100px 100px 100px;
   grid-gap: 0px;
 }
+
 #btn-submit {
   background-color: #072ac8;
   color: white;

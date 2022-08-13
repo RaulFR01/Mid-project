@@ -27,73 +27,58 @@
 
     <div class="simplify">
       <header class="simplifyHeader">
-        <h1>Simplify</h1>
+        <h1 id="simplifyTitle"></h1>
         <div class="subSimplify">
           <div class="sub1">
-            <h3>Design & App Development</h3>
+            <h3 id="uITitle"></h3>
           </div>
           <div class="sub2">
-            <h4>Completed on jan 14th</h4>
+            <h4>Completed on <span id="dateProject"></span></h4>
           </div>
         </div>
       </header>
-
-      <div class="imagenSimplify">
-        <img src="/img/projects-section/1.jpg" alt="imagen de simplify" />
+      <div id="imagenSimplify">
+        <div id="imagenSimplifyBlurred"></div>
       </div>
+
       <div class="parrafoSimplify">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-          tincidunt nulla lectus, nec luctus nulla volutpat cursus. Etiam nec
-          enim non sapien sodales blandit a sit amet leo. Nulla in lacus
-          gravida, suscipit felis ut, rhoncus ex. Mauris lobortis fermentum leo,
-          eget sodales arcu ultrices quis. Ut porttitor quis felis porta ornare.
-          Nunc vitae vulputate elit. In vitae viverra purus. Class aptent taciti
-          sociosqu ad litora torquent per conubia nostra, per inceptos
-          himenaeos. In imperdiet arcu non sapien venenatis, eget volutpat augue
-          accumsan. Integer blandit sed libero nec volutpat. Vestibulum
-          facilisis tortor vitae mi finibus, id pretium quam molestie.
-        </p>
-        <p>
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-          per inceptos himenaeos. Curabitur suscipit at nisi rhoncus venenatis.
-          Aliquam gravida sollicitudin metus et elementum. Suspendisse eget
-          magna a neque semper vestibulum. Nulla sit amet ipsum risus. Vivamus
-          mi justo, bibendum ac mi a, semper sagittis nunc. In et faucibus
-          ipsum. Praesent vulputate, urna eget ullamcorper molestie, eros nisi
-          suscipit justo, a fringilla lacus purus ut arcu. Orci varius natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Maecenas porttitor maximus efficitur. Fusce nec porttitor lorem, sed
-          cursus leo.//aqui va el parrafo sacado de la api
-        </p>
+        <p id="parrafoSimplify"></p>
       </div>
     </div>
 
     <div class="otherProjects">
       <h2>Other Projects</h2>
       <div class="projectsLearnMore">
-        <div class="orbit">
+        <div class="fichas">
           <img src="/img/projects-section/4.jpg" alt="orbit" />
           <div class="oPTextContent">
-            <h7>Orbit</h7>
-            <p>UI Design</p>
+            <div>
+              <p id="sub4">Orbit</p>
+              <p id="sub5">UI Design</p>
+            </div>
             <a href="">Learn more</a>
           </div>
         </div>
-        <div class="purify">
+        <div class="fichas">
           <img src="/img/projects-section/5.jpg" alt="purify" />
           <div class="oPTextContent">
-            <h7>Purify</h7>
-            <p>UI/UX Design</p>
+            <div>
+              <p id="sub4">Purify</p>
+              <p id="sub5">UI/UX Design</p>
+            </div>
             <a href="">Learn more</a>
           </div>
         </div>
-        <div class="cryptoPie">
+        <div class="fichas">
           <img src="/img/projects-section/6.jpg" alt="cryptoPie" />
           <div class="oPTextContent">
-            <h7>CryptoPie</h7>
-            <p>App Development</p>
-            <a href="">Learn more</a>
+            <div>
+              <p id="sub4">CryptoPie</p>
+              <p id="sub5">App Development</p>
+            </div>
+            <div id="learnMore">
+              <a href="">Learn more</a>
+            </div>
           </div>
         </div>
       </div>
@@ -102,12 +87,20 @@
     <div class="questions">
       <div class="yellowBox">
         <div class="contentYellowBox">
-          <h2>Do you have any questions?</h2>
-          <h7>Let us help you!</h7>
+          <h2 id="anyQuestions">Do you have any questions?</h2>
+          <h7 id="letUsHelpYou">Let us help you!</h7>
           <div class="mailForm">
             <form>
-              <input type="email" name="" placeholder="Enter your email" />
-              <input type="submit" value="Subscribe" />
+              <div id="inputFormDiv">
+                <img src="/img/newsletter/icon/mail.svg" alt="icon mail" />
+                <input
+                  id="inputForm"
+                  type="email"
+                  name=""
+                  placeholder="Enter your email"
+                />
+              </div>
+              <button type="submit" value="Subscribe">Subscribe</button>
             </form>
           </div>
         </div>
