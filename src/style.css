@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background-color:#F4F6FC; /*color changed*/
+  background-color: #f4f6fc; /*color changed*/
 }
 
 /**Project Page Header Section*/
@@ -38,10 +38,10 @@ body {
   background-color: #072ac8;
   display: flex;
   align-items: center;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.contactUsProject:hover{
+.contactUsProject:hover {
   background-color: #051a7a;
   transform: scale(1.1);
 }
@@ -186,11 +186,11 @@ body {
   height: 50%;
 }
 
-.fichas{
-  transition: all .2s ease-in-out;
+.fichas {
+  transition: all 0.2s ease-in-out;
 }
 
-.fichas:hover{
+.fichas:hover {
   transform: scale(1.1);
 }
 
@@ -255,11 +255,10 @@ body {
   font-size: 17px;
   line-height: 130%;
   margin-left: 25px;
-  transition: all .2s ease-in-out
+  transition: all 0.2s ease-in-out;
 }
 
-
-.mailForm button:hover{
+.mailForm button:hover {
   background-color: #051a7a;
   transform: scale(1.05);
 }
@@ -403,28 +402,28 @@ fieldset {
   margin: 0px 170px;
 }
 
-#content-hero-section{
+#content-hero-section {
   margin-top: 109px;
   width: 530px;
   height: 422px;
   text-align: left;
 }
 
-#content-hero-section h1{
+#content-hero-section h1 {
   margin-block-start: 0;
   margin-block-end: 0;
   width: 530px;
   height: 210px;
-  font-weight: 700; 
+  font-weight: 700;
   font-size: 60px;
   line-height: 70px;
-  color: #292E47;
+  color: #292e47;
 }
 
 #content-hero-section p {
   width: 435px;
   height: 90px;
-  color: #6B708D;
+  color: #6b708d;
   font-size: 20px;
   line-height: 150%;
   font-weight: 400;
@@ -441,10 +440,11 @@ fieldset {
   text-decoration: none;
   font-size: 17px;
   font-weight: 500;
-  line-height: 22px; 
+  line-height: 22px;
 }
-#touch-hero-section  {
-  color: #FFFFFF;
+
+#touch-hero-section {
+  color: #ffffff;
   width: 92;
   height: 22px;
   text-align: center;
@@ -453,8 +453,9 @@ fieldset {
   margin-right: 40px;
 }
 
-#work-hero-section { /*falta position: en figma es relatiu a #content-hero-section i jo tinc 1 div pel mig */
-  color: #6B708D;
+#work-hero-section {
+  /*falta position: en figma es relatiu a #content-hero-section i jo tinc 1 div pel mig */
+  color: #6b708d;
   margin-top: 15px;
 }
 
@@ -466,7 +467,6 @@ fieldset {
   background-position: center;
   background-size: contain;
   position: relative;
-  
 }
 
 #images-hero-section > img {
@@ -485,7 +485,6 @@ fieldset {
   left: 300px;
   top: 400px;
 }
-
 
 #client-section {
   width: 1440px;
@@ -516,7 +515,7 @@ fieldset {
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
-  color: #292E47;
+  color: #292e47;
 }
 
 #projects-section-flex {
@@ -526,10 +525,9 @@ fieldset {
 }
 
 .projects-section-style {
-height: 444px;
-width: 340px;
-background-color: #FFFFFF;
-
+  height: 444px;
+  width: 340px;
+  background-color: #ffffff;
 }
 
 .projects-section-style img {
@@ -545,10 +543,10 @@ background-color: #FFFFFF;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  color: #292E47;
+  color: #292e47;
 }
 
-.projects-section-style p{
+.projects-section-style p {
   width: 225px;
   height: 26px;
   left: 30px;
@@ -556,10 +554,10 @@ background-color: #FFFFFF;
   font-weight: 400;
   font-size: 17px;
   line-height: 26px;
-  color: #6B708D;
+  color: #6b708d;
 }
 
-.projects-section-style a{
+.projects-section-style a {
   width: 86px;
   height: 26px;
   left: 30px;
@@ -567,7 +565,7 @@ background-color: #FFFFFF;
   font-weight: 400;
   font-size: 17px;
   line-height: 26px;
-  color: #072AC8;
+  color: #072ac8;
   text-decoration: none;
 }
 
@@ -578,18 +576,16 @@ background-color: #FFFFFF;
   background-color: #292e47;
   margin-left: 60px;
   margin-right: 60px;
+  height: 600px;
 }
 
 .testimonial-content {
-  
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: center; 
+  height: 100%;
 }
 
 #testimonial-section h3 {
@@ -608,6 +604,8 @@ background-color: #FFFFFF;
   font-weight: 500;
   line-height: 160%;
   font-style: normal;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #testimonial-section .Kristin {
@@ -622,9 +620,9 @@ background-color: #FFFFFF;
 }
 .orbit-background {
   box-sizing: border-box;
+  height: 100%;
   width: 100%;
-  z-index: -1;
-
+  position: absolute;
 }
 
 h3 {
@@ -634,59 +632,42 @@ h3 {
 }
 
 .memoji {
-  left: 63px;
-  top: 51px;
+  position: absolute;
+  width: 150px;
+  height: 150px;
 }
 
 .memoji-1 {
-  
-  top: 0;
-  left: 0;
-  width: 150px;
-  height: 150px;
+  top: 50px;
+  left: 70px;
 }
 
 .memoji-2 {
-  
-  top: 0;
-  right: 0;
-  width: 150px;
-  height: 150px;
+  top: 50px;
+  right: 70px;
 }
 
 .memoji-3 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 150px;
-  height: 150px;
+  bottom: 60px;
+  left: 70px;
 }
 
 .memoji-4 {
-  
-  bottom: 0;
-  right: 0;
-  width: 150px;
-  height: 150px;
+  bottom: 60px;
+  right: 70px;
 }
 
 .clients-information {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 171px;
-  height: 50px;
-}
-
-.Kristin-div {
-  width: 50px;
-  height: 50px;
+  margin-bottom:50px; 
 }
 
 .Kristin-img {
   border-radius: 50%;
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
 }
 
 .Kristin-text {
@@ -719,11 +700,10 @@ h3 {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-width: 269px;
-height: 28px;
-left: 960px;
-top: 267px;
-
+  width: 269px;
+  height: 28px;
+  left: 960px;
+  top: 267px;
 }
 
 #our-services p {
@@ -745,8 +725,7 @@ top: 267px;
   padding-left: 30px;
   padding-right: 30px;
   display: flex;
-  
-
+  flex-direction: column;
 }
 
 #our-services .internal-div1 {
@@ -763,10 +742,20 @@ top: 267px;
 
 .icon-box {
   background-color: #ecf7ff;
+  border-radius: 50%;
+  width:50px;
+  height:50px;
   display: flex;
+  align-items:center;
+  justify-content: center;
 
-  border-radius: 49.6px;
-  padding: 1%;
+}
+
+.icon-box img {
+  width:25px;
+  height:25px;
+
+
 }
 
 /* yellow-box section  */
@@ -780,9 +769,8 @@ top: 267px;
 }
 
 #yellow-box .internal-div {
-  transform:translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
 }
-
