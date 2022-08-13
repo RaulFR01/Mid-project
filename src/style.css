@@ -3,34 +3,40 @@ body {
 
 }
 
+/* testimonial-section  */
+
 #testimonial-section {
   position: relative;
   background-color: #292e47;
   margin-left: 60px;
   margin-right: 60px;
-  width: 1320px;
   
-  
- 
 }
 
-#testimonial-section .internal-div {
+.testimonial-content {
   position: absolute;
-  text-align: center;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
 }
 
 #testimonial-section h3 {
   font-size: 40px;
   color: #f4f6fc;
+  text-align: center;
 }
 
 #testimonial-section .review {
   font-size: 24px;
   color: #ffc600;
+  text-align: center;
+  line-height: 160%;
 }
 
 #testimonial-section .Kristin {
@@ -42,7 +48,6 @@ body {
 #testimonial-section .booking {
   font-size: 13px;
   color: #f4f6fc;
-  line-height: 15px;
 }
 .orbit-background {
   box-sizing: border-box;
@@ -103,15 +108,15 @@ h3 {
   position: absolute;
   width: 50px;
   height: 50px;
-  left: 465px;
-  top: 332px;
-  flex-basis: 40%;
+  flex-basis: fit-content;
   max-width: 100%;
 }
 
 .Kristin-text {
   padding-left: 20px;
 }
+
+/* our-service section  */
 
 #our-services .external-div{
   display: flex;
@@ -158,4 +163,33 @@ h3 {
   padding: 1%;
 
 
+}
+
+/* yellow-box section  */
+
+#yellow-box {
+  background-color:#ffc600;
+  margin: 60px;
+}
+
+
+/**Project Page Contact Section*/
+
+.logoAdress > img{
+  margin-bottom: 30px;
+  width: 98.38px;
+  height: 30px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px;
+}
+
+.linksProject {
+  display: grid;
+  grid-template-rows: 70px 70px;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 0px;
 }
