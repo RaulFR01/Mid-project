@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 html {
   margin: 0;
@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color:#F4F6FC; /*color changed*/
 }
 
 /**Project Page Header Section*/
@@ -14,8 +14,8 @@ body {
 .headerProject {
   margin-left: 170px;
   margin-right: 170px;
-  margin-top: 86px;
-  margin-bottom: 86px;
+  margin-top: 70px; /*from 86px to 70px*/
+  margin-bottom: 0px; /*lo he sacado*/
 }
 
 .headerProject > nav {
@@ -51,6 +51,10 @@ body {
   text-decoration: none;
   padding: 15px 36px;
   font-weight: 500;
+}
+
+.list-sections > ul > li > a {
+  text-decoration: none;
 }
 
 /**Project Page Simplify Section*/
@@ -370,4 +374,190 @@ fieldset {
 #input-row input {
   width: 600px;
   margin: 20px 0px 20px 0px;
+}
+
+/* Hero-Section upper-Index*/
+#hero-section {
+  width: 1440px;
+  height: 650px;
+  margin-left: 18px;
+  margin-top: 97px;
+
+}
+
+#container-hero-section {
+  width: 1100px;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 170px;
+}
+
+#content-hero-section{
+  margin-top: 109px;
+  width: 530px;
+  height: 422px;
+  text-align: left;
+}
+
+#content-hero-section h1{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 530px;
+  height: 210px;
+  font-weight: 700; 
+  font-size: 60px;
+  line-height: 70px;
+  color: #292E47;
+}
+
+#content-hero-section p {
+  width: 435px;
+  height: 90px;
+  color: #6B708D;
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 400;
+  margin-block-start: 30px;
+  margin-block-end: 40px;
+}
+
+#links-hero-section {
+  display: flex;
+  flex-direction: row;
+}
+
+#links-hero-section a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px; 
+}
+#touch-hero-section  {
+  color: #FFFFFF;
+  width: 92;
+  height: 22px;
+  text-align: center;
+  background-color: #072ac8;
+  padding: 15px 29px;
+  margin-right: 40px;
+}
+
+#work-hero-section { /*falta position: en figma es relatiu a #content-hero-section i jo tinc 1 div pel mig */
+  color: #6B708D;
+  margin-top: 15px;
+}
+
+#images-hero-section {
+  width: 570px;
+  height: 650px;
+  background-image: url(/img/hero-section/hero-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  
+}
+
+#images-hero-section > img {
+  width: 380px;
+  height: 400px;
+}
+
+#card1 {
+  position: absolute;
+  left: -90px;
+  top: -15px;
+}
+
+#card2 {
+  position: absolute;
+  left: 300px;
+  top: 400px;
+}
+
+
+#client-section {
+  width: 1440px;
+  height: 96px;
+  margin-top: 133px;
+  margin-bottom: 200px;
+}
+
+#client-section-images {
+  width: 1077px;
+  margin-left: 170px;
+  margin-right: 193px;
+  filter: grayscale(100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#projects-section {
+  width: 1100px;
+  height: 561px;
+}
+
+#projects-section h2 {
+  width: 285;
+  height: 47px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #292E47;
+}
+
+#projects-section-flex {
+  height: 444px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.projects-section-style {
+height: 444px;
+width: 340px;
+background-color: #FFFFFF;
+
+}
+
+.projects-section-style img {
+  width: 340px;
+  height: 240px;
+}
+
+.projects-section-style h3 {
+  width: 88px;
+  height: 28px;
+  left: 30px;
+  top: 270px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #292E47;
+}
+
+.projects-section-style p{
+  width: 225px;
+  height: 26px;
+  left: 30px;
+  top: 308px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #6B708D;
+}
+
+.projects-section-style a{
+  width: 86px;
+  height: 26px;
+  left: 30px;
+  top: 388px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #072AC8;
+  text-decoration: none;
 }
