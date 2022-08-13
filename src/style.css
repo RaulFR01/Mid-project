@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 html {
   margin: 0;
@@ -14,8 +14,8 @@ body {
 .headerProject {
   margin-left: 170px;
   margin-right: 170px;
-  margin-top: 86px;
-  margin-bottom: 86px;
+  margin-top: 70px; /*from 86px to 70px*/
+  margin-bottom: 0px; /*lo he sacado*/
 }
 
 .headerProject > nav {
@@ -207,55 +207,49 @@ fieldset {
 
 /* Hero-Section upper-Index*/
 #hero-section {
-  position: absolute;
   width: 1440px;
   height: 650px;
-  top: 237px; /*falta left*/
+  margin-left: 18px;
+  margin-top: 97px;
+
 }
 
 #container-hero-section {
-  position: absolute;
   width: 1100px;
   height: 650px;
-  left: 170px;
-  top: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0px 170px;
 }
 
 #content-hero-section{
-  position: absolute;
+  margin-top: 109px;
   width: 530px;
-  height: 422;
-  left: 170px;
-  top: 109px;
+  height: 422px;
   text-align: left;
 }
 
 #content-hero-section h1{
-  position: absolute;
+  margin-block-start: 0;
+  margin-block-end: 0;
   width: 530px;
   height: 210px;
-  left: 170px;
-  top: 109px;
   font-weight: 700; 
   font-size: 60px;
   line-height: 70px;
   color: #292E47;
-
 }
 
 #content-hero-section p {
-  position: absolute;
   width: 435px;
   height: 90px;
-  top: 349px;
-  left: 170px;
   color: #6B708D;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 150%;
   font-weight: 400;
+  margin-block-start: 30px;
+  margin-block-end: 40px;
 }
 
 #links-hero-section {
@@ -263,73 +257,67 @@ fieldset {
   flex-direction: row;
 }
 
-#button-hero-section{ /*lo mismo que estilo del boton de Contact Us de navbar. Se puede fusionar con #touch-hero-section? y falta mirar flex y position perquè tinc dos divs pel mig */
-  width: 92px;
-  height: 22px;
-  background-color: #072ac8;
-  padding: 15px 37px;
-}
-
-#touch-hero-section  { /* mirar si puc ficar #button-hero-section > a */
+#links-hero-section a {
   text-decoration: none;
-  color: #FFFFFF;
-  font-size: 17px;
-  width: 92;
-  height: 22px;
-  font-weight: 500;
-  line-height: 22px;
-  text-align: center;
-
-}
-
-#links-hero-section a { /*falta position: en figma es relatiu a #content-hero-section i jo tinc 1 div pel mig */
-  text-decoration: none;
-  color: #6B708D;
   font-size: 17px;
   font-weight: 500;
   line-height: 22px; 
 }
+#touch-hero-section  {
+  color: #FFFFFF;
+  width: 92;
+  height: 22px;
+  text-align: center;
+  background-color: #072ac8;
+  padding: 15px 29px;
+  margin-right: 40px;
+}
+
+#work-hero-section { /*falta position: en figma es relatiu a #content-hero-section i jo tinc 1 div pel mig */
+  color: #6B708D;
+  margin-top: 15px;
+}
 
 #images-hero-section {
-  position: absolute;
   width: 570px;
   height: 650px;
-  left: 700px;
-  top: 0px;
   background-image: url(/img/hero-section/hero-image.png);
-  background-position: 0. center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  
+}
+
+#images-hero-section > img {
+  width: 380px;
+  height: 400px;
 }
 
 #card1 {
-  width: 199px;
-  height: 216px;
   position: absolute;
-  left: 700px;
-  top: 25px;
+  left: -90px;
+  top: -15px;
 }
 
 #card2 {
-  width: 190px;
-  height: 193px;
   position: absolute;
-  left: 1080px;
-  top: 457px;
+  left: 300px;
+  top: 400px;
 }
 
+
 #client-section {
-  position: absolute;
   width: 1440px;
   height: 96px;
-  top: 1002px;
-  left: calc(50% -720px);
-  margin-top: 115px;
+  margin-top: 133px;
   margin-bottom: 200px;
 }
 
 #client-section-images {
-  position: absolute;
   width: 1077px;
-  left: 170px;
+  margin-left: 170px;
+  margin-right: 193px;
   filter: grayscale(100%);
   display: flex;
   flex-direction: row;
@@ -338,15 +326,11 @@ fieldset {
 }
 
 #projects-section {
-  position: absolute;
   width: 1100px;
   height: 561px;
-  top: 1298px;
-  left: 170px;
 }
 
 #projects-section h2 {
-  position: absolute;
   width: 285;
   height: 47px;
   font-weight: 700;
@@ -356,13 +340,12 @@ fieldset {
 }
 
 #projects-section-flex {
-  position: absolute;
   height: 444px;
-  top: 117px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .projects-section-style {
-position: absolute;
 height: 444px;
 width: 340px;
 background-color: #FFFFFF;
@@ -370,13 +353,11 @@ background-color: #FFFFFF;
 }
 
 .projects-section-style img {
-  position: absolute;
   width: 340px;
   height: 240px;
 }
 
 .projects-section-style h3 {
-  position: absolute;
   width: 88px;
   height: 28px;
   left: 30px;
@@ -388,7 +369,6 @@ background-color: #FFFFFF;
 }
 
 .projects-section-style p{
-  position: absolute;
   width: 225px;
   height: 26px;
   left: 30px;
@@ -400,7 +380,6 @@ background-color: #FFFFFF;
 }
 
 .projects-section-style a{
-  position: absolute;
   width: 86px;
   height: 26px;
   left: 30px;
