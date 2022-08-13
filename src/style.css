@@ -179,6 +179,7 @@ body {
 
 .fichas:hover{
   transform: scale(1.1);
+}
 
 /**Project Page Questions Section*/
 
@@ -295,7 +296,7 @@ body {
 .contact {
   display: flex;
   justify-content: space-between;
-  margin: 60px 120px 60px 170px;
+  margin: 200px 170px 100px 170px;
 }
 
 .linksProject {
