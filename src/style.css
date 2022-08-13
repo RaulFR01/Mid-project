@@ -179,8 +179,6 @@ body {
 
 .fichas:hover{
   transform: scale(1.1);
-}
-
 
 /**Project Page Questions Section*/
 
@@ -260,7 +258,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  
 }
 
 #inputFormDiv img {
