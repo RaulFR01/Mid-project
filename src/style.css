@@ -162,15 +162,7 @@ body {
   text-decoration: none;
 }
 
-.projectsLearnMore .orbit img {
-  width: 100%;
-  height: 50%;
-}
-.projectsLearnMore .purify img {
-  width: 100%;
-  height: 50%;
-}
-.projectsLearnMore .cryptoPie img {
+.projectsLearnMore .card img {
   width: 100%;
   height: 50%;
 }
@@ -246,7 +238,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  
 }
 
 #inputFormDiv img {
