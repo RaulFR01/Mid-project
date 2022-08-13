@@ -574,7 +574,7 @@ background-color: #FFFFFF;
 }
 
 .testimonial-content {
-  position: absolute;
+  
   top: 50%;
   left: 50%;
   margin-right: -50%;
@@ -615,8 +615,9 @@ background-color: #FFFFFF;
 }
 .orbit-background {
   box-sizing: border-box;
-  width: 1088px;
+  width: 100%;
   z-index: -1;
+
 }
 
 h3 {
@@ -631,7 +632,7 @@ h3 {
 }
 
 .memoji-1 {
-  position: absolute;
+  
   top: 0;
   left: 0;
   width: 150px;
@@ -639,7 +640,7 @@ h3 {
 }
 
 .memoji-2 {
-  position: absolute;
+  
   top: 0;
   right: 0;
   width: 150px;
@@ -655,7 +656,7 @@ h3 {
 }
 
 .memoji-4 {
-  position: absolute;
+  
   bottom: 0;
   right: 0;
   width: 150px;
@@ -756,7 +757,7 @@ top: 267px;
 .icon-box {
   background-color: #ecf7ff;
   display: flex;
-  position: absolute;
+
   border-radius: 49.6px;
   padding: 1%;
 }
@@ -771,10 +772,10 @@ top: 267px;
   height: 500px;
 }
 
-.yellow-box-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+#yellow-box .internal-div {
+  transform:translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
