@@ -129,9 +129,9 @@
     </section>
 
     <section id="our-services">
-     <div id="ourServices-container">
-      <h3><span>Our Services</span></h3>
-      <div class="external-div">
+     <div id="ourServices-section">
+      <h3>Our Services</h3>
+      <div class="services-container">
         <div class="internal-div1">
           <div class="icon-box">
             <img src="/img/services-section/icons/1.svg" alt="user interface icon" />
@@ -175,12 +175,14 @@
   </section>
 
   <section id="yellow-box">  
-   <div class="internal-div">
-    <h3><span>Do you have any questions?</span></h3>
+   <div class="yellow-container">
+    <h3>Do you have any questions?</h3>
      <p>Let us help you!</p>
-      <form action="/some-url" method="post">
-       <label for="email">Email: </label>
+      <form class="yellow-form" action="/some-url" method="post">
+       <div class="email-box">
+        <img src="/img/newsletter/icon/mail.svg" alt="mail image">
         <input type="email" id="email" placeholder="Enter your email">
+      </div>
         <input type="submit" value="Subscribe">
       </form>
    </div>
