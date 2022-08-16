@@ -14,10 +14,10 @@
     <nav>
       <img src="/img/logos/circle.svg" alt="circle-logo" />
       <div class="list-sections">
-        <ul>
-          <li><a>Home</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Services</a></li>
+        <ul> <!--He puesto hrefs, si os parecen bien, creo que cambia el color del texto, mirarlo. Si os parece bien ponerlo en todos los htmls-->
+          <li><a href="#">Home</a></li> 
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#our-services">Services</a></li>
         </ul>
       </div>
       <div class="contactUsProject">
@@ -40,7 +40,7 @@
             <div id="links-hero-section">
               <a id="touch-hero-section" href="/src/formsPage.html">
                   Get in touch
-              </a>
+              </a> 
               <a id="work-hero-section" href="#projects-section"> See our work </a>
             </div>
           </div>
@@ -62,13 +62,13 @@
         </div>
       </section>
       
-            <section id="client-section">
+      <section id="client-section">
         <div id="client-section-images">
-          <img src="/img/logos/airbnb-logo.svg" alt="airbnb logo" />
-          <img src="/img/logos/google-logo.svg" alt="google logo" />
-          <img src="/img/logos/microsoft-logo.svg" alt="microsoft logo" />
-          <img src="/img/logos/fedex-logo.svg" alt="fedex logo" />
-          <img src="/img/logos/amazon-logo.svg" alt="amazon logo" />
+          <img id="airbnb-logo" src="/img/logos/airbnb-logo.svg" alt="airbnb logo" />
+          <img id="google-logo" src="/img/logos/google-logo.svg" alt="google logo" />
+          <img id="microsoft-logo" src="/img/logos/microsoft-logo.svg" alt="microsoft logo" />
+          <img id="fedex-logo" src="/img/logos/fedex-logo.svg" alt="fedex logo" />
+          <img id="amazon-logo" src="/img/logos/amazon-logo.svg" alt="amazon logo" />
         </div>
       </section>
 
@@ -80,23 +80,29 @@
         <div id="projects-section-flex"> <!--¿Para JS mejor id que class no?-->
           <article class="projects-section-style">
             <img src="/img/projects-section/1.jpg" alt="project1" />
+            <div class="projects-section-margins">
             <h3>Simplify</h3>
             <p>UI Design & App Development</p>
             <a href="/src/Projects/1.html"> Learn more </a>
+          </div>
           </article>
 
           <article class="projects-section-style">
             <img src="/img/projects-section/2.jpg" alt="project2" />
+            <div class="projects-section-margins">
             <h3>Dashcoin</h3>
             <p>Web Development</p>
             <a href="#"> Learn more </a>
+            </div>
           </article>
 
           <article class="projects-section-style">
             <img src="/img/projects-section/3.jpg" alt="project3" />
+            <div class="projects-section-margins">
             <h3>Vectorify</h3>
             <p>User Experience Design</p>
             <a href="#"> Learn more </a>
+            </div>
           </article>
         </div>
       </section>
