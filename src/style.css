@@ -23,6 +23,19 @@ body {
   justify-content: space-between;
 }
 
+#circleLogoAnchor{
+  display: flex;
+  align-items: center
+}
+
+#circleLogo{
+  transition: all 0.1s ease-in-out;
+}
+
+#circleLogo:hover{
+  transform: scale(1.2);
+}
+
 .list-sections > ul {
   width: 300px;
   display: flex;
@@ -32,6 +45,14 @@ body {
 .list-sections > ul > li {
   list-style: none;
   color: #6b708d;
+}
+
+.list-sections > ul > li >a{
+  color: #6b708d;
+}
+
+.list-sections > ul > li >a:hover{
+  color: #9799a4;
 }
 
 .contactUsProject {
@@ -142,6 +163,7 @@ body {
 .otherProjects .projectsLearnMore {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .projectsLearnMore > div {
@@ -162,6 +184,8 @@ body {
   top: -20px;
 }
 
+
+
 #sub4 {
   font-weight: 500;
   font-size: 24px;
@@ -175,9 +199,13 @@ body {
   color: #6b708d;
 }
 
-.oPTextContent a {
+.oPTextContent > a {
   color: #072ac8;
   text-decoration: none;
+}
+
+.oPTextContent > a:hover{
+  color: #5970d7;
 }
 
 .projectsLearnMore .fichas img {
