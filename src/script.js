@@ -27,11 +27,13 @@ function validateForm() {
   return true;
 }
 
-async function getAPI(url) {
+async function doIt(url) {
   try {
+    const page = getPageNumber();
     const API = await fetch(url);
     const JSON = await API.json();
     writeProject(JSON);
+    writeOtherProjects(JSON, page);
   } catch (error) {
     console.log(error);
   }
@@ -58,17 +60,36 @@ function writeProject(data) {
   }
 }
 
-getAPI(API_URL);
+function getPageNumber() {
 
-/*
-
-function main(){
-    const resultado = await getAPI1();
-    console.log(resultado);
-    getElementsHomePage();
+  const pageNumber = document.getElementById("page").innerHTML;
+return pageNumber;
 }
 
-main();
+function writeOtherProjects(jsonData, numberPage) {
+  const jsonProject = jsonData.sort((a,b) => a.uuid - b.uuid).filter((project) => project.uuid !== "1");
+  let stringTemplate = ``;
 
-// help -> JSON.map(proyecto => document.getElementById("parrafo-proyecto").innerHTML = proyecto.content);
-*/
+  for (elements of jsonProject) {
+    stringTemplate = `
+    <div class="fichas">
+          <img src="${elements.image}" alt="image of ${elements.name}" />
+          <div class="oPTextContent">
+            <div>
+              <p id="sub4">${elements.name}</p>
+              <p id="sub5">${elements.description}</p>
+            </div>
+            <a href="">Learn more</a>
+          </div>
+    </div>
+    `
+  document.querySelector(".projectsLearnMore").innerHTML += stringTemplate;
+
+  }
+}
+
+
+doIt(API_URL);
+
+
+
