@@ -23,16 +23,16 @@ body {
   justify-content: space-between;
 }
 
-#circleLogoAnchor{
+#circleLogoAnchor {
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
-#circleLogo{
+#circleLogo {
   transition: all 0.1s ease-in-out;
 }
 
-#circleLogo:hover{
+#circleLogo:hover {
   transform: scale(1.2);
 }
 
@@ -47,11 +47,11 @@ body {
   color: #6b708d;
 }
 
-.list-sections > ul > li >a{
+.list-sections > ul > li > a {
   color: #6b708d;
 }
 
-.list-sections > ul > li >a:hover{
+.list-sections > ul > li > a:hover {
   color: #9799a4;
 }
 
@@ -184,8 +184,6 @@ body {
   top: -20px;
 }
 
-
-
 #sub4 {
   font-weight: 500;
   font-size: 24px;
@@ -204,7 +202,7 @@ body {
   text-decoration: none;
 }
 
-.oPTextContent > a:hover{
+.oPTextContent > a:hover {
   color: #5970d7;
 }
 
