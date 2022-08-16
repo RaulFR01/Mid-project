@@ -9,7 +9,7 @@ function validateForm() {
   console.log(fullName);
 
   let errorMessage = "";
-  var phoneRegex =
+  let phoneRegex =
     /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 
   if (fullName === "ironhack" || fullName.includes("ironhack")) {
@@ -24,7 +24,6 @@ function validateForm() {
     document.getElementById("error-message").innerHTML += errorMessage;
     return false;
   }
-
   return true;
 }
 
