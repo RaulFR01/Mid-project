@@ -29,11 +29,10 @@ function validateForm() {
 
 async function doIt(url) {
   try {
-    const page = getPageNumber();
     const API = await fetch(url);
     const JSON = await API.json();
     writeProject(JSON);
-    writeOtherProjects(JSON, page);
+    writeOtherProjects(JSON);
   } catch (error) {
     console.log(error);
   }
@@ -61,13 +60,14 @@ function writeProject(data) {
 }
 
 function getPageNumber() {
-
   const pageNumber = document.getElementById("page").innerHTML;
-return pageNumber;
+  return pageNumber;
 }
 
 function writeOtherProjects(jsonData, numberPage) {
-  const jsonProject = jsonData.sort((a,b) => a.uuid - b.uuid).filter((project) => project.uuid !== "1");
+  const jsonProject = jsonData
+    .sort((a, b) => a.uuid - b.uuid)
+    .filter((project) => project.uuid !== "1");
   let stringTemplate = ``;
 
   for (elements of jsonProject) {
@@ -82,14 +82,9 @@ function writeOtherProjects(jsonData, numberPage) {
             <a href="">Learn more</a>
           </div>
     </div>
-    `
-  document.querySelector(".projectsLearnMore").innerHTML += stringTemplate;
-
+    `;
+    document.querySelector(".projectsLearnMore").innerHTML += stringTemplate;
   }
 }
 
-
 doIt(API_URL);
-
-
-
