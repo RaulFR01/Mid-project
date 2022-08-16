@@ -652,6 +652,7 @@ textarea::placeholder {
   line-height: 47px;
   color: #f4f6fc;
   text-align: center;
+  padding-top: 15px;
 }
 
 #testimonial-section .review {
@@ -842,7 +843,7 @@ h3 {
 .email-box {
   background: #f4f6fc;
   display: flex;
-  gap: 5px;
+  gap: 12px;
   align-items: center;
   padding: 27px;
   width: 390px;
@@ -852,6 +853,7 @@ h3 {
 .email-box input {
   border: none;
   background-color: transparent;
+  font-size: 17px;
 }
 
 .email-box ::placeholder {
