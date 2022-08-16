@@ -240,7 +240,7 @@ body {
   display: flex;
 }
 
-#subscribeButton  {
+#subscribeButton {
   color: white;
   text-decoration: none;
   padding: 15px 36px;
@@ -347,27 +347,31 @@ fieldset {
 
 #contact-form input {
   height: 70px;
-  width: 1415px;
+  width: 100%;
   font-size: 17px;
   background-color: rgba(107, 112, 141, 0.1);
-  padding-left: 20px;
   border: none;
   margin: 20px 0px 20px 0px;
+  padding: 0;
 }
 
 #contact-form textarea {
   font-size: 17px;
-  background-color: rgba(107, 112, 141, 0.1);
-  padding-left: 20px;
+  font-weight: 500;
+  text-align: left;
   padding-top: 20px;
+  background-color: rgba(107, 112, 141, 0.1);
   margin-top: 20px;
+  padding-top: 20px;
   border: none;
+  width: 100%;
+  padding: 0;
+  font-family: "Roboto";
 }
 
 #contact-div {
-  width: 1440px;
   height: 830px;
-  margin: auto;
+  margin: 60px 170px 60px 170px;
 }
 #contact-div > h1 {
   font-size: 60px;
@@ -379,9 +383,16 @@ fieldset {
   flex-direction: row;
 }
 
-#input-row input {
-  width: 600px;
-  margin: 20px 0px 20px 0px;
+#input-row fieldset {
+  width: 48%;
+}
+
+input::placeholder {
+  padding: 20px;
+}
+
+textarea::placeholder {
+  padding: 20px 20px 20px 30px;
 }
 
 /* Hero-Section upper-Index*/
@@ -545,9 +556,9 @@ fieldset {
   transition: all 0.2s ease-in-out;
   box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
-  
+
 .projects-section-style:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .projects-section-style img {
@@ -581,7 +592,6 @@ fieldset {
   margin-left: 30px;
   margin-bottom: 30px;
 }
-
 
 /* testimonial-section  */
 
@@ -643,7 +653,7 @@ h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
-  color: #292E47;
+  color: #292e47;
 }
 
 .memoji {
@@ -713,15 +723,13 @@ h3 {
 }
 
 #our-services h3 {
-  margin-bottom:70px;
-
+  margin-bottom: 70px;
 }
 
 #our-services h4 {
   color: #292e47;
   font-weight: 500;
   font-size: 24px;
-  
 }
 
 #our-services p {
@@ -767,9 +775,9 @@ h3 {
 
 /* yellow-box section  */
 .yellow-form {
-  display:flex;
+  display: flex;
   justify-content: center;
-  gap:20px;
+  gap: 20px;
 }
 
 #yellow-box {
@@ -787,7 +795,7 @@ h3 {
 #yellow-box p {
   text-align: center;
   margin-bottom: 50px;
-  color: #292E47;
+  color: #292e47;
   font-size: 20px;
 }
 
@@ -806,24 +814,22 @@ h3 {
   padding: 27px;
   width: 390px;
   margin-left: 30px;
-
 }
 
 .email-box input {
   border: none;
   background-color: transparent;
-  
 }
 
 .email-box ::placeholder {
-  color: #292E47;
+  color: #292e47;
   font-size: 17px;
 }
 
-form input[type=submit] {
-  background-color: #072AC8;
+form input[type="submit"] {
+  background-color: #072ac8;
   border: none;
-  padding-left:60px ;
+  padding-left: 60px;
   padding-right: 60px;
   display: block;
   color: white;
