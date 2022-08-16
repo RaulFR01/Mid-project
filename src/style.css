@@ -445,6 +445,12 @@ fieldset {
   background-color: #072ac8;
   padding: 15px 29px;
   margin-right: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+#touch-hero-section:hover {
+  background-color: #051a7a;
+  transform: scale(1.1);
 }
 
 #work-hero-section {
@@ -480,11 +486,11 @@ fieldset {
 }
 
 #client-section {
-  margin: 133px 0px 200px 0px;
+  margin: 133px 18px 200px 18px;
 }
 
 #client-section-images {
-  margin: 32px 250px;
+  margin: 32px 170px;
   filter: grayscale(100%);
   display: flex;
   flex-direction: row;
@@ -518,24 +524,30 @@ fieldset {
 }
 
 #projects-section h2 {
-  width: 285;
+  width: 285px;
   height: 47px;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
   color: #292e47;
-  margin: 0px 170px 70px 170px;
+  margin: 0px 985px 70px 170px;
 }
 
 #projects-section-flex {
   height: 444px;
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 170px;
+  justify-content: space-between;
+  margin: 0px 170px;
 }
 
 .projects-section-style {
   background-color: #ffffff;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+}
+  
+.projects-section-style:hover {
+    transform: scale(1.1);
 }
 
 .projects-section-style img {
