@@ -386,15 +386,10 @@ fieldset {
 
 /* Hero-Section upper-Index*/
 #hero-section {
-  width: 1440px;
-  height: 650px;
-  margin-left: 18px;
-  margin-top: 97px;
+  margin: 97px 18px 0px 18px;
 }
 
 #container-hero-section {
-  width: 1100px;
-  height: 650px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -453,7 +448,6 @@ fieldset {
 }
 
 #work-hero-section {
-  /*falta position: en figma es relatiu a #content-hero-section i jo tinc 1 div pel mig */
   color: #6b708d;
   margin-top: 15px;
 }
@@ -486,16 +480,11 @@ fieldset {
 }
 
 #client-section {
-  width: 1440px;
-  height: 96px;
-  margin-top: 133px;
-  margin-bottom: 200px;
+  margin: 133px 0px 200px 0px;
 }
 
 #client-section-images {
-  width: 1077px;
-  margin-left: 170px;
-  margin-right: 193px;
+  margin: 32px 250px;
   filter: grayscale(100%);
   display: flex;
   flex-direction: row;
@@ -503,9 +492,29 @@ fieldset {
   align-items: center;
 }
 
-#projects-section {
-  width: 1100px;
-  height: 561px;
+#airbnb-logo {
+  width: 104;
+  height: 32;
+}
+
+#google-logo {
+  width: 96;
+  height: 32;
+}
+
+#microsoft-logo {
+  width: 123;
+  height: 26;
+}
+
+#fedex-logo {
+  width: 101;
+  height: 30;
+}
+
+#amazon-logo {
+  width: 104;
+  height: 32;
 }
 
 #projects-section h2 {
@@ -515,17 +524,17 @@ fieldset {
   font-size: 40px;
   line-height: 47px;
   color: #292e47;
+  margin: 0px 170px 70px 170px;
 }
 
 #projects-section-flex {
   height: 444px;
   display: flex;
   justify-content: space-evenly;
+  margin-left: 170px;
 }
 
 .projects-section-style {
-  height: 444px;
-  width: 340px;
   background-color: #ffffff;
 }
 
@@ -535,38 +544,32 @@ fieldset {
 }
 
 .projects-section-style h3 {
-  width: 88px;
-  height: 28px;
-  left: 30px;
-  top: 270px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #292e47;
+  margin-left: 30px;
 }
 
 .projects-section-style p {
-  width: 225px;
-  height: 26px;
-  left: 30px;
-  top: 308px;
   font-weight: 400;
   font-size: 17px;
   line-height: 26px;
   color: #6b708d;
+  margin-left: 30px;
+  margin-bottom: 54px;
 }
 
 .projects-section-style a {
-  width: 86px;
-  height: 26px;
-  left: 30px;
-  top: 388px;
   font-weight: 400;
   font-size: 17px;
   line-height: 26px;
   color: #072ac8;
   text-decoration: none;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
+
 
 /* testimonial-section  */
 
