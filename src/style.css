@@ -281,7 +281,7 @@ body {
   font-weight: 500;
   font-size: 17px;
   line-height: 130%;
-  margin-left: 25px;
+  margin-left: 20px;
   transition: all 0.2s ease-in-out;
   border: none;
 }
@@ -771,6 +771,7 @@ h3 {
   font-size: 20px;
   color: #6b708d;
   margin-bottom: 50px;
+  line-height: 30px;
 }
 
 #our-services a {
@@ -812,7 +813,6 @@ h3 {
 .yellow-form {
   display: flex;
   justify-content: center;
-  gap: 20px;
   height:80px;
 }
 
