@@ -501,30 +501,32 @@ textarea::placeholder {
 }
 
 #images-hero-section {
-  width: 570px;
-  height: 650px;
-  background-image: url(/img/hero-section/hero-image.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  /*width: 570px;
+  height: 650px;*/
   position: relative;
 }
 
-#images-hero-section > img {
-  width: 380px;
-  height: 400px;
+#hero-image {
+  position: relative;
+  width: 570px;
+  height: 637px;
+  z-index: -1;
 }
 
 #card1 {
-  position: absolute;
-  left: -90px;
-  top: -15px;
+  position:absolute;
+  width: 380px;
+  height: 432px;
+  margin-left: -95px;
+  margin-top: -40px;
 }
 
 #card2 {
-  position: absolute;
-  left: 300px;
-  top: 400px;
+  position:absolute;
+  width: 380px;
+  height: 386px;
+  margin-left: 290px;
+  margin-top: 410px;;
 }
 
 #client-section {
