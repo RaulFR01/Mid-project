@@ -850,7 +850,7 @@ h3 {
   margin-left: 30px;
 }
 
-.email-box input {
+#email {
   border: none;
   background-color: transparent;
   font-size: 17px;
