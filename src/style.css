@@ -90,6 +90,11 @@ body {
   text-decoration: none;
 }
 
+#addressAnchor{
+  text-decoration: none;
+  color: #9799a4;
+}
+
 /**Project Page Simplify Section*/
 
 .simplify {
