@@ -514,7 +514,7 @@ textarea::placeholder {
 }
 
 #card1 {
-  position:absolute;
+  position: absolute;
   width: 380px;
   height: 432px;
   margin-left: -95px;
@@ -522,11 +522,11 @@ textarea::placeholder {
 }
 
 #card2 {
-  position:absolute;
+  position: absolute;
   width: 380px;
   height: 386px;
   margin-left: 290px;
-  margin-top: 410px;;
+  margin-top: 410px;
 }
 
 #client-section {
@@ -869,4 +869,8 @@ form input[type="submit"] {
   display: block;
   color: white;
   font-size: 17px;
+}
+
+#page {
+  display: none;
 }
