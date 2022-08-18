@@ -90,6 +90,11 @@ body {
   text-decoration: none;
 }
 
+#addressAnchor{
+  text-decoration: none;
+  color: #9799a4;
+}
+
 /**Project Page Simplify Section*/
 
 .simplify {
@@ -401,6 +406,17 @@ fieldset {
   margin: 20px 0px 20px 0px;
   padding: 0;
   text-indent: 20px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 #contact-form textarea {
@@ -788,9 +804,7 @@ h3 {
   color: #072ac8;
 }
 
-#our-services .internal-div1,
-.internal-div2,
-.internal-div3 {
+#our-services .internal-div {
   background: #ffffff;
   box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
   padding-top: 40px;
@@ -798,6 +812,12 @@ h3 {
   padding-left: 30px;
   padding-right: 30px;
   flex-grow: 1;
+  transition: all 0.2s ease-in-out;
+  
+}
+
+#our-services .internal-div:hover {
+  transform: scale(1.1);
 }
 
 .Learn-more {
@@ -866,6 +886,7 @@ h3 {
   border: none;
   background-color: transparent;
   font-size: 17px;
+  width: 100%;
 }
 
 .email-box input {
