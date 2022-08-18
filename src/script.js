@@ -78,7 +78,7 @@ function writeOtherProjects(jsonData, numberPage) {
             <a href="./${elements.uuid}.html">Learn more</a>
           </div>
     </div>`;
-      document.querySelector(".projectsLearnMore").innerHTML += stringTemplate;
+      document.getElementById("projectsLearnMore").innerHTML += stringTemplate;
     }
   } else if (numberPage === "1") {
     for (elements of JsonHomePage) {
@@ -93,7 +93,7 @@ function writeOtherProjects(jsonData, numberPage) {
             <a href="./Projects/${elements.uuid}.html">Learn more</a>
           </div>
     </div>`;
-      document.querySelector(".projectsLearnMore").innerHTML += stringTemplate;
+      document.getElementById("projectsLearnMore").innerHTML += stringTemplate;
     }
   }
 }
