@@ -9,6 +9,24 @@ body {
   background-color: #f4f6fc; /*color changed*/
 }
 
+/**Common Animation */
+
+.contactUsProject,
+#touch-hero-section,
+#subscribeButton,
+#btn-submit {
+  transition: all 0.2s ease-in-out;
+  background-color: #072ac8;
+}
+
+.contactUsProject:hover,
+#touch-hero-section:hover,
+#subscribeButton:hover,
+#btn-submit:hover {
+  background-color: #051a7a;
+  transform: scale(1.1);
+}
+
 /**Project Page Header Section*/
 
 .headerProject {
@@ -59,12 +77,6 @@ body {
   background-color: #072ac8;
   display: flex;
   align-items: center;
-  transition: all 0.2s ease-in-out;
-}
-
-.contactUsProject:hover {
-  background-color: #051a7a;
-  transform: scale(1.1);
 }
 
 .contactUsProject > a {
@@ -279,13 +291,8 @@ body {
   font-weight: 500;
   font-size: 17px;
   line-height: 130%;
-  margin-left: 25px;
-  transition: all 0.2s ease-in-out;
-}
-
-#subscribeButton:hover {
-  background-color: #051a7a;
-  transform: scale(1.05);
+  margin-left: 20px;
+  border: none;
 }
 
 #inputFormDiv {
@@ -487,12 +494,6 @@ textarea::placeholder {
   background-color: #072ac8;
   padding: 15px 29px;
   margin-right: 40px;
-  transition: all 0.2s ease-in-out;
-}
-
-#touch-hero-section:hover {
-  background-color: #051a7a;
-  transform: scale(1.1);
 }
 
 #work-hero-section {
@@ -770,6 +771,7 @@ h3 {
   font-size: 20px;
   color: #6b708d;
   margin-bottom: 50px;
+  line-height: 30px;
 }
 
 #our-services a {
@@ -811,7 +813,7 @@ h3 {
 .yellow-form {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  height: 80px;
 }
 
 #yellow-box {
