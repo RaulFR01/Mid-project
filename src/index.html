@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Project mid-term</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Project mid-term</title>
-</head>
-
-<body>
-  <header class="headerProject">
+  <body>
+    <div id="page">1</div>
+    <header class="headerProject">
       <nav>
         <a id="circleLogoAnchor" href="./index.html"
           ><img id="circleLogo" src="./img/logos/circle.svg" alt="circle-logo"
@@ -28,7 +28,6 @@
       </nav>
     </header>
 
-
     <!--Upper Section-->
     <section id="upper-index">
       <section id="hero-section">
@@ -36,14 +35,16 @@
           <div id="content-hero-section">
             <h1>Empower Your Business With Stunning Design!</h1>
             <p>
-              Circle is a digital design and development studio.<br>
+              Circle is a digital design and development studio.<br />
               We design and develop astonishing websites and mobile apps.
             </p>
             <div id="links-hero-section">
               <a id="touch-hero-section" href="./formsPage.html">
-                  Get in touch
-              </a> 
-              <a id="work-hero-section" href="#projects-section"> See our work </a>
+                Get in touch
+              </a>
+              <a id="work-hero-section" href="#projects-section">
+                See our work
+              </a>
             </div>
           </div>
 
@@ -61,168 +62,191 @@
             />
 
             <img
-            id="hero-image"
-            src="./img/hero-section/hero-image.png"
-            alt="hero section card2"
-          />
+              id="hero-image"
+              src="./img/hero-section/hero-image.png"
+              alt="hero section card2"
+            />
           </div>
-
         </div>
       </section>
-      
+
       <section id="client-section">
         <div id="client-section-images">
-          <img id="airbnb-logo" src="./img/logos/airbnb-logo.svg" alt="airbnb logo" />
-          <img id="google-logo" src="./img/logos/google-logo.svg" alt="google logo" />
-          <img id="microsoft-logo" src="./img/logos/microsoft-logo.svg" alt="microsoft logo" />
-          <img id="fedex-logo" src="./img/logos/fedex-logo.svg" alt="fedex logo" />
-          <img id="amazon-logo" src="./img/logos/amazon-logo.svg" alt="amazon logo" />
+          <img
+            id="airbnb-logo"
+            src="./img/logos/airbnb-logo.svg"
+            alt="airbnb logo"
+          />
+          <img
+            id="google-logo"
+            src="./img/logos/google-logo.svg"
+            alt="google logo"
+          />
+          <img
+            id="microsoft-logo"
+            src="./img/logos/microsoft-logo.svg"
+            alt="microsoft logo"
+          />
+          <img
+            id="fedex-logo"
+            src="./img/logos/fedex-logo.svg"
+            alt="fedex logo"
+          />
+          <img
+            id="amazon-logo"
+            src="./img/logos/amazon-logo.svg"
+            alt="amazon logo"
+          />
         </div>
       </section>
 
-      <section id="projects-section">
+      <div class="otherProjects">
         <!-- Add animation. Should I create HTML tags for all existing projects if I wannas ad a for in JS?-->
-         <!-- Same css style with Eugeni! CHECK it out-->
+        <!-- Same css style with Eugeni! CHECK it out-->
         <h2>Recent Projects</h2>
-       
-        <div id="projects-section-flex"> <!--¿Para JS mejor id que class no?-->
-          <article class="projects-section-style">
-            <img src="./img/projects-section/1.jpg" alt="project1" />
-            <div class="projects-section-margins">
-            <h3>Simplify</h3>
-            <p>UI Design & App Development</p>
-            <a href="./Projects/1.html"> Learn more </a>
+
+        <div class="projectsLearnMore"></div>
+      </div>
+    </section>
+
+    <!-- Section bottom -->
+
+    <section id="section-bottom">
+      <section id="testimonial-section">
+        <img
+          src="./img/testimonial-section/orbit.png"
+          alt="orbit"
+          class="orbit-background"
+        />
+
+        <img
+          src="./img/testimonial-section/memoji-1.png"
+          alt="memoji-1"
+          class="memoji-1 memoji"
+        />
+        <img
+          src="./img/testimonial-section/memoji-2.png"
+          alt="memoji-2"
+          class="memoji-2 memoji"
+        />
+        <img
+          src="./img/testimonial-section/memoji-3.png"
+          alt="memoji-3"
+          class="memoji-3 memoji"
+        />
+        <img
+          src="./img/testimonial-section/memoji-4.png"
+          alt="memoji-4"
+          class="memoji-4 memoji"
+        />
+
+        <div class="testimonial-content">
+          <h3><span>Hear What Our Clients Have to Say</span></h3>
+          <p class="review">
+            "Circle helped us through every stage of our startup. <br />
+            We really enjoyed working with you"
+          </p>
+
+          <div class="clients-information">
+            <img
+              class="Kristin-img"
+              src="./img/testimonial-section/profile.png"
+              alt="Kristin Watson"
+            />
+            <div class="Kristin-text">
+              <p class="Kristin">Kristin Watson</p>
+              <p class="booking">Booking.com</p>
+            </div>
           </div>
-          </article>
+        </div>
+      </section>
 
-          <article class="projects-section-style">
-            <img src="./img/projects-section/2.jpg" alt="project2" />
-            <div class="projects-section-margins">
-            <h3>Dashcoin</h3>
-            <p>Web Development</p>
-            <a href="#"> Learn more </a>
+      <section id="our-services">
+        <div id="ourServices-section">
+          <h3>Our Services</h3>
+          <div class="services-container">
+            <div class="internal-div1">
+              <div class="icon-box">
+                <img
+                  src="./img/services-section/icons/1.svg"
+                  alt="user interface icon"
+                />
+              </div>
+              <h4>User Interface Design</h4>
+              <p>
+                Circle provides you with a <br />
+                Stunning user intertace design <br />
+                that is accessible to everyone.
+              </p>
+              <a class="Learn-more" href="#Learn-more"> Learn more </a>
             </div>
-          </article>
 
-          <article class="projects-section-style">
-            <img src="./img/projects-section/3.jpg" alt="project3" />
-            <div class="projects-section-margins">
-            <h3>Vectorify</h3>
-            <p>User Experience Design</p>
-            <a href="#"> Learn more </a>
+            <div class="internal-div2">
+              <div class="icon-box">
+                <img
+                  src="./img/services-section/icons/2.svg"
+                  alt="user experience"
+                />
+              </div>
+              <h4>User Experience Design</h4>
+              <p>
+                Circle always focuses on<br />
+                delivering the best user <br />
+                experience to your customers.
+              </p>
+              <a class="Learn-more" href="#Learn-more"> Learn more </a>
             </div>
-          </article>
+            <div class="internal-div3">
+              <div class="icon-box">
+                <img
+                  src="./img/services-section/icons/3.svg"
+                  alt="application development icon"
+                />
+              </div>
+              <h4>Application Development</h4>
+              <p>
+                We develop high-quality mobile <br />
+                and web applications using the<br />
+                latest technology stack.
+              </p>
+              <a class="Learn-more" href="#Learn-more"> Learn more </a>
+            </div>
+          </div>
         </div>
       </section>
     </section>
 
-  <!-- Section bottom -->
-
-  <section id="section-bottom">
-    <section id="testimonial-section">
-      <img src="./../img/testimonial-section/orbit.png" alt="orbit" class="orbit-background">
-      
-        <img src="./img/testimonial-section/memoji-1.png" alt="memoji-1" class="memoji-1 memoji">
-        <img src="./img/testimonial-section/memoji-2.png" alt="memoji-2" class="memoji-2 memoji">
-        <img src="./img/testimonial-section/memoji-3.png" alt="memoji-3" class="memoji-3 memoji">
-        <img src="./img/testimonial-section/memoji-4.png" alt="memoji-4" class="memoji-4 memoji">
-      
-      <div class="testimonial-content">
-        <h3><span>Hear What Our Clients Have to Say</span></h3>
-        <p class="review">"Circle helped us through every stage of our startup. <br />
-          We really enjoyed working with you"</p>
-
-        <div class="clients-information">
-          <img class="Kristin-img" src="./img/testimonial-section/profile.png" alt="Kristin Watson">
-          <div class="Kristin-text">
-            <p class="Kristin">Kristin Watson </p>
-            <p class="booking">Booking.com </p>
+    <section id="yellow-box">
+      <div class="yellow-container">
+        <h3>Do you have any questions?</h3>
+        <p>Let us help you!</p>
+        <form class="yellow-form" action="/some-url" method="post">
+          <div class="email-box">
+            <img src="./img/newsletter/icon/mail.svg" alt="mail image" />
+            <input type="email" id="email" placeholder="Enter your email" />
           </div>
-        </div>
+          <input id="subscribeButton" type="submit" value="Subscribe" />
+        </form>
       </div>
     </section>
 
-    <section id="our-services">
-     <div id="ourServices-section">
-      <h3>Our Services</h3>
-      <div class="services-container">
-        <div class="internal-div1">
-          <div class="icon-box">
-            <img src="./img/services-section/icons/1.svg" alt="user interface icon" />
-          </div>
-          <h4>User Interface Design</h4>
-          <p>
-            Circle provides you with a <br />
-            Stunning user intertace design <br />
-            that is accessible to everyone.
-          </p>
-          <a class="Learn-more" href="#Learn-more"> Learn more </a></li>
-        </div>
-
-        <div class="internal-div2">
-          <div class="icon-box">
-            <img src="./img/services-section/icons/2.svg" alt="user experience" />
-          </div>
-          <h4>User Experience Design</h4>
-          <p>
-            Circle always focuses on<br />
-            delivering the best user <br />
-            experience to your customers.
-          </p>
-          <a class="Learn-more" href="#Learn-more"> Learn more </a></li>
-        </div>
-        <div class="internal-div3">
-          <div class="icon-box">
-            <img src="./img/services-section/icons/3.svg" alt="application development icon" />
-          </div>
-          <h4>Application Development</h4>
-          <p>
-            We develop high-quality mobile <br />
-            and web applications using the<br />
-            latest technology stack.
-          </p>
-          <a class="Learn-more" href="#Learn-more"> Learn more </a>
-        </div>
+    <div class="contact">
+      <div class="logoAdress">
+        <img src="./img/logos/circle.svg" alt="circle-logo" />
+        <address>
+          2972 Westheimer Rd. Santa Ana,<br />
+          Illinois 85486
+        </address>
+      </div>
+      <div class="linksProject">
+        <div>Team</div>
+        <div>Services</div>
+        <div>About Us</div>
+        <div>Press</div>
+        <div>Projects</div>
+        <div>Privacy Policy</div>
       </div>
     </div>
-    </section>
-  </section>
-
-  <section id="yellow-box">  
-   <div class="yellow-container">
-    <h3>Do you have any questions?</h3>
-     <p>Let us help you!</p>
-      <form class="yellow-form" action="/some-url" method="post">
-       <div class="email-box">
-        <img src="./img/newsletter/icon/mail.svg" alt="mail image">
-        <input type="email" id="email" placeholder="Enter your email">
-      </div>
-        <input id="subscribeButton" type="submit" value="Subscribe">
-      </form>
-   </div>
-  </section>
-
-
-  <div class="contact">
-    <div class="logoAdress">
-      <img src="./img/logos/circle.svg" alt="circle-logo" />
-      <address>
-        2972 Westheimer Rd. Santa Ana,<br />
-        Illinois 85486
-      </address>
-    </div>
-    <div class="linksProject">
-      <div>Team</div>
-      <div>Services</div>
-      <div>About Us</div>
-      <div>Press</div>
-      <div>Projects</div>
-      <div>Privacy Policy</div>
-    </div>
-  </div>
-  <script type="text/javascript" src="./script.js"></script>
-
-</body>
-
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
-
