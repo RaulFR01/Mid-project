@@ -10,6 +10,11 @@ function validateForm() {
   return true;
 }
 
+function suscribeGreetings() {
+  alert("Gracias por suscribirte!");
+  return true;
+}
+
 async function doIt(url, page) {
   try {
     const API = await fetch(url);

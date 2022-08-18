@@ -351,6 +351,11 @@ body {
   grid-gap: 0px;
 }
 
+.linksProject a {
+  text-decoration: none;
+  color: #6b708d;
+}
+
 #btn-submit {
   background-color: #072ac8;
   color: white;
@@ -500,6 +505,10 @@ fieldset {
 #work-hero-section {
   color: #6b708d;
   margin-top: 15px;
+}
+
+#work-hero-section:hover {
+  color: #9799a4;
 }
 
 #images-hero-section {
@@ -857,6 +866,10 @@ h3 {
   border: none;
   background-color: transparent;
   font-size: 17px;
+}
+
+.email-box input {
+  border: none;
 }
 
 .email-box ::placeholder {
