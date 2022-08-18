@@ -786,6 +786,11 @@ h3 {
 
 #our-services a {
   color: #072ac8;
+  text-decoration: none;
+}
+
+#our-services a:hover {
+  color: #5970d7;
 }
 
 #our-services .internal-div {
@@ -804,9 +809,6 @@ h3 {
   transform: scale(1.1);
 }
 
-.Learn-more {
-  text-decoration: none;
-}
 
 .icon-box {
   background-color: #ecf7ff;
