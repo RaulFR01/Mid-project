@@ -911,7 +911,7 @@ form input[type="submit"] {
 #page {
   display: none;
 }
- 
+
 @media (min-width: 640px) and (max-width: 1280px) {
   /* tablet */
 
@@ -937,47 +937,46 @@ form input[type="submit"] {
     margin: 0 10px;
     justify-content: center;
   }
-    
+
   #content-hero-section {
     z-index: 1;
     text-align: center;
   }
-    
+
   #links-hero-section {
     justify-content: center;
     margin: 30px 0;
   }
-    
- #content-hero-section h1 {
+
+  #content-hero-section h1 {
     margin: 20px 0;
   }
-      
+
   #content-hero-section p {
     margin: 0 70px;
   }
-    
+
   #images-hero-section {
     z-index: -1;
     position: absolute;
   }
-    
+
   #card1 {
     display: none;
   }
-    
+
   #card2 {
     display: none;
   }
-    
+
   #hero-image {
     opacity: 0.3;
   }
-    
+
   #links-hero-section a {
     font-weight: 550;
   }
 }
-
 
 @media (max-width: 639px) {
   /*phone*/
@@ -1009,7 +1008,7 @@ form input[type="submit"] {
     display: flex;
     justify-content: center;
     height: 50px;
-    width: 100%;
+    width: 50%;
   }
 
   .contactUsProject a {
@@ -1029,46 +1028,45 @@ form input[type="submit"] {
     display: block;
   }
 
-  .simplify{
+  .simplify {
     margin-left: 10px;
     margin-right: 10px;
   }
 
-  .headerProject{
+  .headerProject {
     display: block;
   }
 
-  .imagenSimplify{
+  .imagenSimplify {
     width: 20px;
   }
 
-  #otherProjects{
+  #otherProjects {
     margin: 20px;
   }
 
-  .yellow-container{
+  .yellow-container {
     width: 400px;
   }
 
-  #subscribeButton{
+  #subscribeButton {
     height: 50px;
     width: 144px;
     margin-left: 0px;
   }
 
-  #yellow-box{
-    margin: 20px
-    
+  #yellow-box {
+    margin: 20px;
   }
 
-  .yellow-form{
+  .yellow-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 80px;
   }
 
-  .email-box{
+  .email-box {
     padding: 10px;
     margin: 0;
     margin-bottom: 20px;
@@ -1084,42 +1082,42 @@ form input[type="submit"] {
     margin: 0 10px;
     justify-content: center;
   }
-  
+
   #content-hero-section {
     z-index: 1;
     text-align: center;
   }
-  
+
   #links-hero-section {
     justify-content: center;
     margin: 30px 0;
   }
-  
+
   #content-hero-section h1 {
     margin: 20px 0;
   }
-    
+
   #content-hero-section p {
     margin: 0 70px;
   }
-  
+
   #images-hero-section {
     z-index: -1;
     position: absolute;
   }
-  
+
   #card1 {
     display: none;
   }
-  
+
   #card2 {
     display: none;
   }
-  
+
   #hero-image {
     opacity: 0.3;
   }
-  
+
   #links-hero-section a {
     font-weight: 550;
   }
@@ -1135,6 +1133,4 @@ form input[type="submit"] {
   }
 
   /*otherProjects*/
-
-
 }
