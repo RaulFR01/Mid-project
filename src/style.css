@@ -659,6 +659,7 @@ input::-webkit-inner-spin-button {
 #testimonial-section {
   position: relative;
   background-color: #292e47;
+  width:100%;
   /*margin-left: 60px;
   margin-right: 60px;
   margin-top: 200px;
