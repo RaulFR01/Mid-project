@@ -436,7 +436,7 @@ input::-webkit-inner-spin-button {
 }
 
 #contact-div {
-  height: 830px;
+  height: 100%;
   margin: 120px 170px 0px 170px;
   padding: 0;
 }
@@ -912,20 +912,34 @@ form input[type="submit"] {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 640px) and (max-width: 1280px) {
+  /* tablet */
 
-  #client-section {
-    margin: 0;
-    margin-left: 60px;
-    width: 700px;
+  #contact-div {
+    margin: 60px;
   }
 
-  #client-section-images {
-    margin: 30px 60px 30px 60px;
-    width: 700px;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
+  #input-row {
+    display: block;
   }
 
+  #input-row fieldset {
+    width: 100%;
+  }
+}
+
+@media (max-width: 639px) {
+  /*phone*/
+
+  #contact-div {
+    margin: 60px;
+  }
+
+  #input-row {
+    display: block;
+  }
+
+  #input-row fieldset {
+    width: 100%;
+  }
 }
