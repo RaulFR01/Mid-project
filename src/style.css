@@ -911,7 +911,7 @@ form input[type="submit"] {
 #page {
   display: none;
 }
-
+ 
 @media (min-width: 640px) and (max-width: 1280px) {
   /* tablet */
 
@@ -987,4 +987,45 @@ form input[type="submit"] {
   #input-row fieldset {
     width: 100%;
   }
+   #container-hero-section {
+      margin: 0 10px;
+    }
+    #content-hero-section {
+      z-index: 1;
+      text-align: center;
+    }
+  
+    #links-hero-section {
+      justify-content: center;
+      margin: 30px 0;
+      width: 100%;
+    }
+  
+    #content-hero-section h1 {
+      margin: 20px 25px;
+    }
+    #content-hero-section p {
+    margin: 0 70px;
+    }
+  
+    #images-hero-section {
+      z-index: -1;
+      position: absolute;
+    }
+  
+    #card1 {
+      display: none;
+    }
+  
+    #card2 {
+      display: none;
+    }
+  
+    #hero-image {
+      opacity: 0.3;
+    }
+  
+    #links-hero-section a {
+      font-weight: 550;
+    }
 }
