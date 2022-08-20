@@ -1140,18 +1140,17 @@ form input[type="submit"] {
 
   /*otherProjects*/
 
-  #otherProjects{
+  #otherProjects {
     margin: 20px;
   }
 
- #projectsLearnMore {
-  flex-direction: column;
-  align-items: center;
+  #projectsLearnMore {
+    flex-direction: column;
+    align-items: center;
   }
 
   .fichas {
     margin: 20px;
-
   }
 
   /*footer*/
@@ -1165,7 +1164,7 @@ form input[type="submit"] {
     flex-direction: row;
   }
 
-  .linksProject{
+  .linksProject {
     display: flex;
     grid-gap: 20px;
     flex-direction: column;
@@ -1256,7 +1255,7 @@ form input[type="submit"] {
 .path {
   stroke-dasharray: 300;
   stroke-dashoffset: 300;
-  animation: dash 4s alternate infinite;
+  animation: dash 3s alternate infinite;
 }
 
 @keyframes dash {
