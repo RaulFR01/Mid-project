@@ -912,7 +912,24 @@ form input[type="submit"] {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 640px) and (max-width: 1280px) {
+  /* tablet */
+
+  #contact-div {
+    margin: 60px;
+  }
+
+  #input-row {
+    display: block;
+  }
+
+  #input-row fieldset {
+    width: 100%;
+  }
+}
+
+@media (max-width: 639px) {
+  /*phone*/
   #client-section {
     margin: 0;
     margin-left: 60px;
