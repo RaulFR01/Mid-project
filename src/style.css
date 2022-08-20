@@ -1039,8 +1039,8 @@ form input[type="submit"] {
   }
 
   .simplify {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .headerProject {
@@ -1066,7 +1066,7 @@ form input[type="submit"] {
   }
 
   #yellow-box {
-    margin: 20px;
+    margin: 40px;
   }
 
   .yellow-form {
@@ -1143,4 +1143,23 @@ form input[type="submit"] {
   }
 
   /*otherProjects*/
+
+
+  /*footer*/
+
+  .contact {
+    display: flex;
+    margin: 60px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+    flex-direction: row;
+  }
+
+  .linksProject{
+    display: flex;
+    grid-gap: 20px;
+    flex-direction: column;
+    align-content: flex-start;
+  }
 }
