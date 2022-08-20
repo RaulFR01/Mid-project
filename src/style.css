@@ -436,7 +436,7 @@ input::-webkit-inner-spin-button {
 }
 
 #contact-div {
-  height: 830px;
+  height: 100%;
   margin: 120px 170px 0px 170px;
   padding: 0;
 }
@@ -913,7 +913,6 @@ form input[type="submit"] {
 }
 
 @media (max-width: 600px) {
-
   #client-section {
     margin: 0;
     margin-left: 60px;
@@ -924,8 +923,19 @@ form input[type="submit"] {
     margin: 30px 60px 30px 60px;
     width: 700px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
   }
 
+  #contact-div {
+    margin: 60px;
+  }
+
+  #input-row {
+    display: block;
+  }
+
+  #input-row fieldset {
+    width: 100%;
+  }
 }
