@@ -11,7 +11,14 @@ function validateForm() {
 }
 
 function suscribeGreetings() {
-  alert("Gracias por suscribirte!");
+  const email = document.getElementById("email").innerHTML;
+
+  if (email === "") {
+    alert("¡Introduce un email porfavor!");
+    return false;
+  } else {
+    alert("¡Gracias por suscribirte!");
+  }
   return true;
 }
 
