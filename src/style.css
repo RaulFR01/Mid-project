@@ -436,7 +436,7 @@ input::-webkit-inner-spin-button {
 }
 
 #contact-div {
-  height: 830px;
+  height: 100%;
   margin: 120px 170px 0px 170px;
   padding: 0;
 }
@@ -911,10 +911,83 @@ form input[type="submit"] {
 #page {
   display: none;
 }
+ 
+@media (min-width: 640px) and (max-width: 1280px) {
+  /* tablet */
+
+  #contact-div {
+    margin: 60px;
+  }
+
+  #input-row {
+    display: block;
+  }
+
+  #input-row fieldset {
+    width: 100%;
+  }
+}
 
 @media (max-width: 639px) {
-  
-    #container-hero-section {
+  /*phone*/
+
+  #contact-div {
+    margin: 60px;
+  }
+
+  #input-row {
+    display: block;
+  }
+
+  .simplify{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .headerProject{
+    display: block;
+  }
+
+  .imagenSimplify{
+    width: 20px;
+  }
+
+  #otherProjects{
+    margin: 20px;
+  }
+
+  .yellow-container{
+    width: 400px;
+  }
+
+  #subscribeButton{
+    height: 50px;
+    width: 144px;
+    margin-left: 0px;
+  }
+
+  #yellow-box{
+    margin: 20px
+    
+  }
+
+  .yellow-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .email-box{
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  #input-row fieldset {
+    width: 100%;
+  }
+   #container-hero-section {
       margin: 0 10px;
     }
     #content-hero-section {
@@ -955,5 +1028,4 @@ form input[type="submit"] {
     #links-hero-section a {
       font-weight: 550;
     }
-  
 }
