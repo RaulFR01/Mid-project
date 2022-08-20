@@ -477,8 +477,8 @@ input::-webkit-inner-spin-button {
 #content-hero-section h1 {
   margin-block-start: 0;
   margin-block-end: 0;
-  width: 530px;
-  height: 210px;
+  width: 100%;
+  height: 50%;
   font-weight: 700;
   font-size: 60px;
   line-height: 70px;
@@ -528,15 +528,15 @@ input::-webkit-inner-spin-button {
 }
 
 #images-hero-section {
-  /*width: 570px;
-  height: 650px;*/
+  width: 570px;
+  height: 650px;
   position: relative;
 }
 
 #hero-image {
   position: relative;
-  width: 570px;
-  height: 637px;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 
@@ -930,7 +930,54 @@ form input[type="submit"] {
   #input-row fieldset {
     width: 100%;
   }
+
+  /*Hero-section*/
+
+  #container-hero-section {
+    margin: 0 10px;
+    justify-content: center;
+  }
+    
+  #content-hero-section {
+    z-index: 1;
+    text-align: center;
+  }
+    
+  #links-hero-section {
+    justify-content: center;
+    margin: 30px 0;
+  }
+    
+ #content-hero-section h1 {
+    margin: 20px 0;
+  }
+      
+  #content-hero-section p {
+    margin: 0 70px;
+  }
+    
+  #images-hero-section {
+    z-index: -1;
+    position: absolute;
+  }
+    
+  #card1 {
+    display: none;
+  }
+    
+  #card2 {
+    display: none;
+  }
+    
+  #hero-image {
+    opacity: 0.3;
+  }
+    
+  #links-hero-section a {
+    font-weight: 550;
+  }
 }
+
 
 @media (max-width: 639px) {
   /*phone*/
@@ -1031,25 +1078,25 @@ form input[type="submit"] {
     width: 100%;
   }
 
-    /*Hero-section*/
+  /*Hero-section*/
 
-    #container-hero-section {
-      margin: 0 10px;
+  #container-hero-section {
+    margin: 0 10px;
+    justify-content: center;
   }
   
   #content-hero-section {
-      z-index: 1;
-      text-align: center;
+    z-index: 1;
+    text-align: center;
   }
   
   #links-hero-section {
-      justify-content: center;
-      margin: 30px 0;
-      width: 100%;
+    justify-content: center;
+    margin: 30px 0;
   }
   
   #content-hero-section h1 {
-      margin: 20px 25px;
+    margin: 20px 0;
   }
     
   #content-hero-section p {
@@ -1057,24 +1104,24 @@ form input[type="submit"] {
   }
   
   #images-hero-section {
-      z-index: -1;
-      position: absolute;
+    z-index: -1;
+    position: absolute;
   }
   
   #card1 {
-      display: none;
+    display: none;
   }
   
   #card2 {
-      display: none;
+    display: none;
   }
   
   #hero-image {
-      opacity: 0.3;
+    opacity: 0.3;
   }
   
   #links-hero-section a {
-      font-weight: 550;
+    font-weight: 550;
   }
 
   /* Client-section*/
@@ -1086,4 +1133,8 @@ form input[type="submit"] {
   #client-section-images {
     margin: 0;
   }
+
+  /*otherProjects*/
+
+
 }
