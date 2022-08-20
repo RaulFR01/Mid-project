@@ -659,7 +659,7 @@ input::-webkit-inner-spin-button {
 #testimonial-section {
   position: relative;
   background-color: #292e47;
-  width:100%;
+  width: 100%;
   /*margin-left: 60px;
   margin-right: 60px;
   margin-top: 200px;
@@ -719,10 +719,15 @@ h3 {
   color: #292e47;
 }
 
+.memoji-box {
+  padding-top: 50px;
+  text-align: center;
+}
+
 .memoji {
-  position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+
 }
 
 .memoji-1 {
@@ -914,7 +919,9 @@ form input[type="submit"] {
   display: none;
 }
 
-@media (min-width: 900px) {
+
+
+@media (min-width: 901px) {
   #testimonial-section {
     margin-right: 60px;
     margin-top: 200px;
@@ -925,4 +932,37 @@ form input[type="submit"] {
   #testimonial-section h3 {
     font-size: 40px;
   }
+
+  .memoji {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+  }
 }
+
+@media (max-width: 600px) {
+  .memoji {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+  }
+
+}
+
+/*check width again */
+@media (max-width: 900px) {
+  .services-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #our-services .internal-div {
+    text-align: center;
+  }
+}
+
+@media (max-width: 300px) {
+  .memoji {
+ display:none;
+  }
+}
+
