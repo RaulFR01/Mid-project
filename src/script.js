@@ -56,7 +56,7 @@ function writeProject(data) {
   }
 }
 
-function getPageNumber() {
+function getPage() {
   const pageNumber = document.getElementById("page").innerHTML;
   return pageNumber;
 }
@@ -104,5 +104,6 @@ function writeOtherProjects(jsonData, numberPage) {
     }
   }
 }
+
 const resultado = getPageNumber();
 doIt(API_URL, resultado);
