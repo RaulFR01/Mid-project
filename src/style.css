@@ -920,6 +920,33 @@ form input[type="submit"] {
 }
 
 
+@media (max-width: 639px) {
+  .memoji {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+  }
+  .services-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #our-services .internal-div {
+    text-align: center;
+  }
+
+
+}
+
+
+@media (min-width:640px) and (max-width: 900px) {
+  .services-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #our-services .internal-div {
+    text-align: center;
+  }
+}
 
 @media (min-width: 901px) {
   #testimonial-section {
@@ -933,6 +960,8 @@ form input[type="submit"] {
     font-size: 40px;
   }
 
+  
+
   .memoji {
     position: absolute;
     width: 150px;
@@ -940,29 +969,4 @@ form input[type="submit"] {
   }
 }
 
-@media (max-width: 600px) {
-  .memoji {
-    width: 80px;
-    height: 80px;
-    text-align: center;
-  }
-
-}
-
-/*check width again */
-@media (max-width: 900px) {
-  .services-container {
-    flex-direction: column;
-    justify-content: center;
-  }
-  #our-services .internal-div {
-    text-align: center;
-  }
-}
-
-@media (max-width: 300px) {
-  .memoji {
- display:none;
-  }
-}
 
