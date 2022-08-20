@@ -919,6 +919,10 @@ form input[type="submit"] {
     margin: 60px;
   }
 
+  .headerProject {
+    margin: 60px;
+  }
+
   #input-row {
     display: block;
   }
@@ -931,7 +935,46 @@ form input[type="submit"] {
 @media (max-width: 639px) {
   /*phone*/
 
+  .list-sections > ul {
+    display: block;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .list-sections > ul > li {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .headerProject > nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerProject > nav > a > img {
+    width: 150px;
+  }
+
+  .contactUsProject {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+  }
+
+  .contactUsProject a {
+    padding: 0;
+    float: right;
+  }
+
   #contact-div {
+    margin: 60px;
+  }
+
+  .headerProject {
     margin: 60px;
   }
 
