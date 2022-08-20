@@ -976,6 +976,16 @@ form input[type="submit"] {
   #links-hero-section a {
     font-weight: 550;
   }
+
+  /* Client-section*/
+
+  #client-section {
+    margin: 165px 18px 150px 18px;
+  }
+  
+  #client-section-images {
+    margin: 0;
+  }
 }
 
 
