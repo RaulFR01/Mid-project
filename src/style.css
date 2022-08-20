@@ -1016,7 +1016,7 @@ form input[type="submit"] {
   .services-container {
     flex-direction: column;
     justify-content: center;
-
+  }
   .list-sections > ul {
     display: block;
     text-align: left;
@@ -1295,8 +1295,8 @@ form input[type="submit"] {
   100% {
     fill: transparent;
     stroke-dashoffset: -200;
-
-
+  }
+}
 
 @media (min-width: 901px) {
   #testimonial-section {
@@ -1315,5 +1315,3 @@ form input[type="submit"] {
     height: 150px;
   }
 }
-
-
