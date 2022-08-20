@@ -1051,10 +1051,6 @@ form input[type="submit"] {
     width: 20px;
   }
 
-  #otherProjects {
-    margin: 20px;
-  }
-
   .yellow-container {
     width: 400px;
   }
@@ -1144,6 +1140,19 @@ form input[type="submit"] {
 
   /*otherProjects*/
 
+  #otherProjects{
+    margin: 20px;
+  }
+
+ #projectsLearnMore {
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .fichas {
+    margin: 20px;
+
+  }
 
   /*footer*/
 
