@@ -915,6 +915,10 @@ form input[type="submit"] {
   display: none;
 }
 
+.icon {
+  display: none;
+}
+
 @media (min-width: 640px) and (max-width: 1280px) {
   /* tablet */
 
@@ -1009,7 +1013,13 @@ form input[type="submit"] {
     margin-left: 5%;
     margin-right: 5%;
   }
-
+  .icon {
+    margin: 20px 0px 20px 0px;
+    display: block;
+    background-color: #f4f6fc;
+    width: 40px;
+    height: 40px;
+  }
   .memoji {
     width: 80px;
     height: 80px;
@@ -1024,14 +1034,16 @@ form input[type="submit"] {
     flex-direction: column;
     justify-content: center;
   }
-  .list-sections > ul {
-    display: block;
+  #nav-menu {
+    display: none;
     text-align: left;
     padding: 0;
     margin-bottom: 20px;
+    overflow: hidden;
+    transition: 0.5s;
   }
 
-  .list-sections > ul > li {
+  #nav-menu > li {
     margin-bottom: 20px;
     text-align: center;
   }

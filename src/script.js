@@ -104,5 +104,14 @@ function writeOtherProjects(jsonData, numberPage) {
     }
   }
 }
+
+function toogleMenu() {
+  const menuIcon = document.getElementById("nav-menu");
+  if (menuIcon.style.display === "block") {
+    menuIcon.style.display = "none";
+  } else {
+    menuIcon.style.display = "block";
+  }
+}
 const resultado = getPageNumber();
 doIt(API_URL, resultado);
