@@ -659,7 +659,7 @@ input::-webkit-inner-spin-button {
 #testimonial-section {
   position: relative;
   background-color: #292e47;
-  width: 100%;
+
   /*margin-left: 60px;
   margin-right: 60px;
   margin-top: 200px;
@@ -667,6 +667,7 @@ input::-webkit-inner-spin-button {
 }
 
 .testimonial-content {
+
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -727,7 +728,6 @@ h3 {
 .memoji {
   width: 100px;
   height: 100px;
-
 }
 
 .memoji-1 {
@@ -919,7 +919,6 @@ form input[type="submit"] {
   display: none;
 }
 
-
 @media (min-width: 640px) and (max-width: 1280px) {
   /* tablet */
 
@@ -930,7 +929,6 @@ form input[type="submit"] {
   #our-services .internal-div {
     text-align: center;
   }
-
 
   #contact-div {
     margin: 60px;
@@ -1008,10 +1006,23 @@ form input[type="submit"] {
 @media (max-width: 639px) {
   /*phone*/
 
+  #testimonial-section{
+    margin-top:150px;
+  }
+  .testimonial-content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .memoji {
     width: 80px;
     height: 80px;
     text-align: center;
+  }
+
+  #ourServices-section {
+    margin-top:150px;
+    margin-bottom:150px;
   }
   .services-container {
     flex-direction: column;
@@ -1166,18 +1177,17 @@ form input[type="submit"] {
 
   /*otherProjects*/
 
-  #otherProjects{
+  #otherProjects {
     margin: 20px;
   }
 
- #projectsLearnMore {
-  flex-direction: column;
-  align-items: center;
+  #projectsLearnMore {
+    flex-direction: column;
+    align-items: center;
   }
 
   .fichas {
     margin: 20px;
-
   }
 
   /*footer*/
@@ -1191,7 +1201,7 @@ form input[type="submit"] {
     flex-direction: row;
   }
 
-  .linksProject{
+  .linksProject {
     display: flex;
     grid-gap: 20px;
     flex-direction: column;
