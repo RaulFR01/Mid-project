@@ -1004,6 +1004,10 @@ form input[type="submit"] {
   #client-section-images {
     margin: 0;
   }
+
+  .yellow-container{
+    width: 90%;
+  }
 }
 
 @media (max-width: 639px) {
