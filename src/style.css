@@ -717,7 +717,7 @@ h3 {
 }
 
 .memoji-box {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   text-align: center;
 }
 
@@ -922,12 +922,15 @@ form input[type="submit"] {
 @media (min-width: 640px) and (max-width: 1280px) {
   /* tablet */
 
+  .memoji-box {
+   padding-top: 80px;
+  }
+
   .services-container {
     flex-direction: column;
-    justify-content: center;
-    
-    
+    justify-content: center;  
   }
+
   #our-services .internal-div {
     text-align: center;
     margin-bottom: 30px;
@@ -1032,6 +1035,10 @@ form input[type="submit"] {
     height: 80px;
     text-align: center;
   }
+
+  .memoji-box {
+    padding-top: 50px;
+   }
 
   #ourServices-section {
     margin-top:150px;
@@ -1374,4 +1381,5 @@ form input[type="submit"] {
     width: 150px;
     height: 150px;
   }
+  
 }
