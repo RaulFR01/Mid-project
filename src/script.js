@@ -38,9 +38,11 @@ async function doIt(url, page) {
 function writeProject(data) {
   const id = getProjectId();
 
-  console.log(id);
-
   const proyecto = data.filter((proyecto) => proyecto.uuid === id);
+
+  if (proyecto.length === 0) {
+    redirection404();
+  }
 
   for (elementos of proyecto) {
     document.getElementById("simplifyTitle").innerHTML = elementos.name;
@@ -128,5 +130,10 @@ function getProjectId() {
   const id = query.get("id");
   return id;
 }
+
+function redirection404() {
+  window.location.href = "./../404.html";
+}
+
 const resultado = getPageNumber();
 doIt(API_URL, resultado);
