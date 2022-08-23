@@ -716,7 +716,6 @@ h3 {
 }
 
 .memoji-box {
-  padding-top: 50px;
   text-align: center;
 }
 
@@ -920,6 +919,12 @@ form input[type="submit"] {
 
 @media (min-width: 640px) and (max-width: 1280px) {
   /* tablet */
+  .testimonial-content {
+    justify-content: center;
+  }
+  .memoji-box {
+    padding-top: 40px;
+  }
 
   .services-container {
     flex-direction: column;
@@ -928,6 +933,11 @@ form input[type="submit"] {
   #our-services .internal-div {
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  .icon-box {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   #contact-div {
@@ -1020,6 +1030,11 @@ form input[type="submit"] {
     width: 40px;
     height: 40px;
   }
+
+  .memoji-box {
+    padding-top: 50px;
+  }
+
   .memoji {
     width: 80px;
     height: 80px;
@@ -1030,10 +1045,22 @@ form input[type="submit"] {
     margin-top: 150px;
     margin-bottom: 150px;
   }
+
+  #our-services .internal-div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
   .services-container {
     flex-direction: column;
     justify-content: center;
   }
+
+  .icon-box {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   #nav-menu {
     display: none;
     text-align: left;
