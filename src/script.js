@@ -36,7 +36,13 @@ async function doIt(url, page) {
 }
 
 function writeProject(data) {
-  const proyecto = data.filter((proyecto) => proyecto.uuid === "1");
+  const id = getProjectId();
+
+  const proyecto = data.filter((proyecto) => proyecto.uuid === id);
+
+  if (proyecto.length === 0) {
+    redirection404();
+  }
 
   for (elementos of proyecto) {
     document.getElementById("simplifyTitle").innerHTML = elementos.name;
@@ -62,9 +68,11 @@ function getPageNumber() {
 }
 
 function writeOtherProjects(jsonData, numberPage) {
+  const id = getProjectId();
+
   const jsonProject = jsonData
     .sort((a, b) => Math.random() - 0.5)
-    .filter((project) => project.uuid !== "1")
+    .filter((project) => project.uuid !== id)
     .slice(0, 3);
 
   const JsonHomePage = jsonData
@@ -84,7 +92,7 @@ function writeOtherProjects(jsonData, numberPage) {
               <p id="sub4">${elements.name}</p>
               <p id="sub5">${elements.description}</p>
             </div>
-            <a href="./${elements.uuid}.html">Learn more</a>
+            <a href="./project.html?id=${elements.uuid}">Learn more</a>
           </div>
     </div>`;
       document.getElementById("projectsLearnMore").innerHTML += stringTemplate;
@@ -99,7 +107,7 @@ function writeOtherProjects(jsonData, numberPage) {
               <p id="sub4">${elements.name}</p>
               <p id="sub5">${elements.description}</p>
             </div>
-            <a href="./Projects/${elements.uuid}.html">Learn more</a>
+            <a href="./projects/project.html?id=${elements.uuid}">Learn more</a>
           </div>
     </div>`;
       document.getElementById("projectsLearnMore").innerHTML += stringTemplate;
@@ -115,5 +123,17 @@ function toogleMenu() {
     menuIcon.style.display = "block";
   }
 }
+
+function getProjectId() {
+  const url = window.location.search;
+  const query = new URLSearchParams(url);
+  const id = query.get("id");
+  return id;
+}
+
+function redirection404() {
+  window.location.href = "./../404.html";
+}
+
 const resultado = getPageNumber();
 doIt(API_URL, resultado);
