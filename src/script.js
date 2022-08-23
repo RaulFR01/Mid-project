@@ -63,12 +63,14 @@ function getPageNumber() {
 
 function writeOtherProjects(jsonData, numberPage) {
   const jsonProject = jsonData
-    .sort((a, b) => a.uuid - b.uuid)
-    .filter((project) => project.uuid !== "1");
+    .sort((a, b) => Math.random() - 0.5)
+    .filter((project) => project.uuid !== "1")
+    .slice(0, 3);
 
   const JsonHomePage = jsonData
     .sort((a, b) => a.uuid - b.uuid)
-    .filter((project) => project.uuid !== "4");
+    .filter((project) => project.uuid !== "4")
+    .slice(0, 3);
 
   let stringTemplate = ``;
 
