@@ -1016,6 +1016,10 @@ form input[type="submit"] {
 @media (max-width: 639px) {
   /*phone*/
 
+  #contact-div > h1 {
+    font-size: 40px;
+  }
+
   #client-section-images > img {
     width: 60px;
   }
@@ -1248,44 +1252,47 @@ form input[type="submit"] {
     align-content: flex-start;
   }
 
-  #simplifyTitle{
+  #simplifyTitle {
     font-size: 40px;
   }
 
-  #uITitle{
+  #uITitle {
     font-size: 20px;
   }
 
-  .sub2{
+  .sub2 {
     font-size: 10px;
     display: flex;
     align-items: center;
   }
 
-  .sub2 h4{
+  .sub2 h4 {
     margin-block-start: 0px;
     margin-block-end: 0px;
   }
-  .simplifyHeader{
+  .simplifyHeader {
     margin-bottom: 0;
   }
 
-  #imagenSimplify > img{
+  #imagenSimplify > img {
     margin-bottom: 10px;
   }
 
-  .subSimplify{
+  .subSimplify {
     flex-direction: column;
   }
 
-  #otherProjects{
+  #otherProjects {
     margin-left: 50px;
     margin-right: 50px;
-
   }
 
-  .yellow-container{
+  .yellow-container {
     width: 90%;
+  }
+
+  #contact-form input textarea {
+    font-size: 15px;
   }
 }
 
