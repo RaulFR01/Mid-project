@@ -659,11 +659,10 @@ input::-webkit-inner-spin-button {
 #testimonial-section {
   position: relative;
   background-color: #292e47;
-  margin-top:200px;
+  margin-top: 200px;
 }
 
 .testimonial-content {
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -717,7 +716,6 @@ h3 {
 }
 
 .memoji-box {
-  padding-top: 50px;
   text-align: center;
 }
 
@@ -921,16 +919,25 @@ form input[type="submit"] {
 
 @media (min-width: 640px) and (max-width: 1280px) {
   /* tablet */
+  .testimonial-content {
+    justify-content: center;
+  }
+  .memoji-box {
+    padding-top: 40px;
+  }
 
   .services-container {
     flex-direction: column;
     justify-content: center;
-    
-    
   }
   #our-services .internal-div {
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  .icon-box {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   #contact-div {
@@ -1004,17 +1011,17 @@ form input[type="submit"] {
   #client-section-images {
     margin: 0;
   }
-
-  .yellow-container{
-    width: 90%;
-  }
 }
 
 @media (max-width: 639px) {
   /*phone*/
 
-  #testimonial-section{
-    margin-top:150px;
+  #client-section-images > img {
+    width: 60px;
+  }
+
+  #testimonial-section {
+    margin-top: 150px;
   }
   .testimonial-content {
     margin-left: 5%;
@@ -1027,6 +1034,11 @@ form input[type="submit"] {
     width: 40px;
     height: 40px;
   }
+
+  .memoji-box {
+    padding-top: 50px;
+  }
+
   .memoji {
     width: 80px;
     height: 80px;
@@ -1034,13 +1046,25 @@ form input[type="submit"] {
   }
 
   #ourServices-section {
-    margin-top:150px;
-    margin-bottom:150px;
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
+
+  #our-services .internal-div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
   .services-container {
     flex-direction: column;
     justify-content: center;
   }
+
+  .icon-box {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   #nav-menu {
     display: none;
     text-align: left;
@@ -1128,6 +1152,7 @@ form input[type="submit"] {
     padding: 10px;
     margin: 0;
     margin-bottom: 20px;
+    width: 50%;
   }
 
   #input-row fieldset {
