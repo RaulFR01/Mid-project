@@ -1011,6 +1011,25 @@ form input[type="submit"] {
   #client-section-images {
     margin: 0;
   }
+
+   /*otherProjects*/
+
+   #otherProjects {
+    margin: 20px;
+  }
+  #projectsLearnMore {
+    flex-direction: column;
+    align-items: center;
+  }
+  #projectsLearnMore > div {
+    width: 80%;
+    height: 600px;
+    margin: 20px;
+  }
+
+  #otherProjects h2 {
+    margin-left: 70px;
+  }
 }
 
 @media (max-width: 639px) {
@@ -1169,6 +1188,7 @@ form input[type="submit"] {
   #content-hero-section {
     z-index: 1;
     text-align: center;
+    width: 500px;
   }
 
   #links-hero-section {
@@ -1177,11 +1197,15 @@ form input[type="submit"] {
   }
 
   #content-hero-section h1 {
-    margin: 20px 0;
+    margin: 20px 55px;
+    width: 75%;
+    font-size: 40px;
   }
 
   #content-hero-section p {
     margin: 0 70px;
+    font-size: 15px;
+    width: 370px;
   }
 
   #images-hero-section {
@@ -1228,6 +1252,10 @@ form input[type="submit"] {
 
   .fichas {
     margin: 20px;
+  }
+
+  #otherProjects h2 {
+    font-size: 40px;
   }
 
   /*footer*/
