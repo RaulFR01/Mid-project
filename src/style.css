@@ -659,11 +659,10 @@ input::-webkit-inner-spin-button {
 #testimonial-section {
   position: relative;
   background-color: #292e47;
-  margin-top:200px;
+  margin-top: 200px;
 }
 
 .testimonial-content {
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -717,7 +716,7 @@ h3 {
 }
 
 .memoji-box {
-  /*padding-top: 50px;*/
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -922,15 +921,10 @@ form input[type="submit"] {
 @media (min-width: 640px) and (max-width: 1280px) {
   /* tablet */
 
-  .memoji-box {
-   padding-top: 80px;
-  }
-
   .services-container {
     flex-direction: column;
-    justify-content: center;  
+    justify-content: center;
   }
-
   #our-services .internal-div {
     text-align: center;
     margin-bottom: 30px;
@@ -1007,17 +1001,13 @@ form input[type="submit"] {
   #client-section-images {
     margin: 0;
   }
-
-  .yellow-container{
-    width: 90%;
-  }
 }
 
 @media (max-width: 639px) {
   /*phone*/
 
-  #testimonial-section{
-    margin-top:150px;
+  #testimonial-section {
+    margin-top: 150px;
   }
   .testimonial-content {
     margin-left: 5%;
@@ -1036,13 +1026,9 @@ form input[type="submit"] {
     text-align: center;
   }
 
-  .memoji-box {
-    padding-top: 50px;
-   }
-
   #ourServices-section {
-    margin-top:150px;
-    margin-bottom:150px;
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
   .services-container {
     flex-direction: column;
@@ -1135,6 +1121,7 @@ form input[type="submit"] {
     padding: 10px;
     margin: 0;
     margin-bottom: 20px;
+    width: 50%;
   }
 
   #input-row fieldset {
@@ -1228,42 +1215,6 @@ form input[type="submit"] {
     grid-gap: 20px;
     flex-direction: column;
     align-content: flex-start;
-  }
-
-  #simplifyTitle{
-    font-size: 40px;
-  }
-
-  #uITitle{
-    font-size: 20px;
-  }
-
-  .sub2{
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-  }
-
-  .sub2 h4{
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-  }
-  .simplifyHeader{
-    margin-bottom: 0;
-  }
-
-  #imagenSimplify > img{
-    margin-bottom: 10px;
-  }
-
-  .subSimplify{
-    flex-direction: column;
-  }
-
-  #otherProjects{
-    margin-left: 50px;
-    margin-right: 50px;
-
   }
 }
 
@@ -1381,5 +1332,4 @@ form input[type="submit"] {
     width: 150px;
     height: 150px;
   }
-  
 }
