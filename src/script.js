@@ -11,7 +11,7 @@ function validateForm() {
 }
 
 function suscribeGreetings() {
-  const email = document.getElementById("email").innerHTML;
+  const email = document.getElementById("email").value;
 
   if (email === "") {
     alert("¡Introduce un email porfavor!");
@@ -75,10 +75,7 @@ function writeOtherProjects(jsonData, numberPage) {
     .filter((project) => project.uuid !== id)
     .slice(0, 3);
 
-  const JsonHomePage = jsonData
-    .sort((a, b) => a.uuid - b.uuid)
-    .filter((project) => project.uuid !== "4")
-    .slice(0, 3);
+  const JsonHomePage = jsonData.sort((a, b) => a.uuid - b.uuid).slice(0, 3);
 
   let stringTemplate = ``;
 
