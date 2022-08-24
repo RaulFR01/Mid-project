@@ -129,7 +129,7 @@ function getProjectId() {
 }
 
 function redirection404() {
-  window.location.href = "./../404.html";
+  window.location.href = "https://midproject-group2.netlify.app/404.html";
 }
 
 const resultado = getPageNumber();

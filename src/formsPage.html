@@ -63,9 +63,11 @@
           <fieldset>
             <label for="phone">Phone</label><br />
             <input
-              type="number"
+              type="text"
               name="phone"
               id="phone"
+              pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}"
+              title="e.g: +34999999999 or (99)999999999"
               placeholder="Enter your phone number"
             />
           </fieldset>
