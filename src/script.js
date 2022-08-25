@@ -6,6 +6,8 @@ function validateForm() {
   if (fullName === "ironhack" || fullName.includes("ironhack")) {
     alert("You can not be Ironhack, because I am Ironhack.");
     return false;
+  } else {
+    alert("¡Gracias por contactarnos!");
   }
   return true;
 }
